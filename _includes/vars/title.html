@@ -1,0 +1,15 @@
+{% if page.url %}
+  {% if page.url contains "tag/" %}
+      {% assign title = page.title %}
+  {% elsif page.url contains "author/" %}
+      {% assign username = page.url | remove: 'author' | remove: '/' | replace: '-', ' ' | remove: ' ' %}
+      {% for author in site.data.authors %}
+          {% if author.username == username %}
+              {% assign title = author.name %}
+          {% endif %}
+      {% endfor %}
+  {% endif %}
+{% endif %}
+{% if title %}
+  {% assign title = title | append: ' | ' | append: site.data.settings.title  %}
+{% endif %}

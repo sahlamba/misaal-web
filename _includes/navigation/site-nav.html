@@ -1,0 +1,35 @@
+<nav class="site-nav">
+  <div class="site-nav-left">
+    {% if page.current != 'home' %}
+      {% if site.logo %}
+        <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}">
+          <img src="{{ site.baseurl}}{{ site.logo }}" alt="{{ site.data.settings.title }}" />
+        </a>
+      {% else %}
+        <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}">
+          {{ site.data.settings.title }}
+        </a>
+      {% endif %}
+    {% endif %}
+    {% if page.navigation %}
+      {% include navigation/nav-list.html %}
+    {% endif %}
+  </div>
+  <div class="site-nav-right">
+    <div class="social-links">
+      {% if site.data.settings.contact.facebook %}
+        <a class="social-link social-link-fb" href="https://facebook.com/{{ site.data.settings.contact.facebook }}" target="_blank" rel="noopener">
+          {% include icons/facebook.html %}
+        </a>
+      {% endif %}
+      {% if site.data.settings.contact.twitter %}
+        <a class="social-link social-link-tw" href="https://twitter.com/{{ site.data.settings.contact.twitter }}" target="_blank" rel="noopener">
+          {% include icons/twitter.html %}
+        </a>
+      {% endif %}
+    </div>
+    {% if site.subscribers %}
+      <a class="subscribe-button" href="#subscribe">Subscribe</a>
+    {% endif %}
+  </div>
+</nav>

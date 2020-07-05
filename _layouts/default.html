@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  {% include vars/title.html %}
+  <title>
+    {% if title %}
+      {{ title }}
+    {% elsif page.title %}
+      {{ page.title }}
+    {% else %}
+      {{ site.data.settings.title }}
+    {% endif %}
+  </title>
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/screen.css' | relative_url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/screen.edited.css' | relative_url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'assets/css/syntax.css' | relative_url }}" />
+  
+  <!--[if IE]>
+      <style>
+        p,
+        ol,
+        ul {
+          width: 100%;
+        }
+        blockquote {
+          width: 100%;
+        }
+      </style>
+    <![endif]-->
+
+  {% include head-meta.html %}
+</head>
+<body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
+  <div class="site-wrapper">
+    {{ content }}
+
+    <!-- Pagination Panel -->
+    {% if paginator.total_posts > paginator.per_page %}
+      {% include pagination.html %}
+    {% endif %}
+
+    {% include footer.html %}
+  </div>
+
+  {% if site.subscribers %}
+    <div id="subscribe" class="subscribe-overlay">
+      <a class="subscribe-overlay-close" href="#"></a>
+      <div class="subscribe-overlay-content">
+        {% if site.logo %}
+          <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.data.settings.title }}" />
+        {% endif %}
+        <h1 class="subscribe-overlay-title">Subscribe to {{ site.data.settings.title }}</h1>
+        <p class="subscribe-overlay-description">
+          Stay up to date! Get all the latest &amp; greatest stories delivered
+          straight to your inbox
+        </p>
+        {% include subscribe-form.html placeholder="youremail@example.com" %}
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
+
+  {% include analytics.html %}
+
+  {% if page.class == "post-template" %}
+    {% include post/scripts.html %}
+  {% elsif page.class == "page-template" %}
+    {% include page/scripts.html %}
+  {% endif %}
+</body>
+</html>

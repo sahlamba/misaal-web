@@ -1,0 +1,43 @@
+---
+layout: default
+current: home
+title: Misaal
+class: 'home-template'
+navigation: true
+pagination:
+  enabled: true
+---
+
+<header
+  class="site-header outer
+    {% if page.cover or site.cover %}
+    " style="background-image: url({% if page.cover %}{{ page.cover | relative_url }}{% elsif site.cover %}{{ site.cover | relative_url }}{% endif %})
+    {% else %}no-cover{% endif %}">
+  <div class="inner">
+    <div class="site-header-content">
+      <h1 class="site-title">
+        {% if site.logo %}
+          <img class="site-logo" src="{{ site.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
+        {% else %}
+          {{ site.data.settings.title }}
+        {% endif %}
+      </h1>
+      <h2 class="site-description">
+        {% if page.description %}
+          {{ page.description }}
+        {% else %}
+          {{ site.data.settings.description }}
+        {% endif %}
+      </h2>
+    </div>
+    {% include navigation/site-nav.html %}
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    <div class="post-feed">
+      {% include post/card.html %}
+    </div>
+  </div>
+</main>
