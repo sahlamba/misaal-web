@@ -5,7 +5,7 @@
       {% assign username = page.url | remove: 'author' | remove: '/' | replace: '-', ' ' | remove: ' ' %}
       {% for author in site.data.authors %}
           {% if author.username == username %}
-              {% assign title = author.name %}
+              {% assign title = author.display_name %}
           {% endif %}
       {% endfor %}
   {% endif %}

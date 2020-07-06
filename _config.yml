@@ -42,7 +42,9 @@ defaults:
 
 # Jekyll Plugins
 plugins_dir: ['_plugins']
-plugins: ['jekyll-paginate-v2']
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-datapage-generator
 
 # Permalinks
 permalink: '/:title'
@@ -69,3 +71,11 @@ autopages:
     enabled: false
   collections:
     enabled: false
+
+# jekyll-datapage-generator Configuration
+page_gen-dirs: true
+page_gen:
+  - data: 'authors'
+    template: 'author'
+    name: 'username'
+    dir: 'author'

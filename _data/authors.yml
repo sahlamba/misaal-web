@@ -3,7 +3,7 @@
   email: 'default@example.com'
   bio: 'Default user to demo bio'
   avatar: 'assets/images/ghost.png'
-  cover: ''
+  cover: 'assets/images/site-cover.jpg'
   location: 'India'
   social_media:
     website: ''
