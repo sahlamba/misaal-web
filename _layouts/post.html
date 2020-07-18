@@ -65,7 +65,7 @@ layout: default
       {% endif %}
 
       <footer class="post-full-footer">
-        {% for author in site.data.authors %}
+        {% for author in site.data.authors.authors %}
           {% if author.username == page.author %}
             <section class="author-card">
               {% if author.avatar %}

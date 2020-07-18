@@ -3,7 +3,7 @@
       {% assign title = page.title %}
   {% elsif page.url contains "author/" %}
       {% assign username = page.url | remove: 'author' | remove: '/' | replace: '-', ' ' | remove: ' ' %}
-      {% for author in site.data.authors %}
+      {% for author in site.data.authors.authors %}
           {% if author.username == username %}
               {% assign title = author.display_name %}
           {% endif %}

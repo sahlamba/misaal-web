@@ -75,7 +75,7 @@ autopages:
 # jekyll-datapage-generator Configuration
 page_gen-dirs: true
 page_gen:
-  - data: 'authors'
+  - data: 'authors.authors'
     template: 'author'
     name: 'username'
     dir: 'author'

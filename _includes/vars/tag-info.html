@@ -1,5 +1,5 @@
 {% assign decoded_url = page.url | url_decode %}
-{% for tag in site.data.tags %}
+{% for tag in site.data.tags.tags %}
   {% if decoded_url contains tag.name %}
     {% assign cover = tag.cover %}
     {% assign tag_description = tag.description %}
