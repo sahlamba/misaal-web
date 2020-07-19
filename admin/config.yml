@@ -5,6 +5,11 @@ backend:
 
 media_folder: 'assets/uploads'
 
+# Branding
+site_url: https://misaal-web.netlify.app
+display_url: https://misaal-web.netlify.app
+logo_url: https://misaal-web.netlify.app/assets/images/ghost.png
+
 collections:
   - name: 'wesbite'
     label: 'Website'
@@ -19,6 +24,7 @@ collections:
           - name: 'description'
             label: 'Description'
             widget: 'string'
+            required: false
           - name: 'contact'
             label: 'Contact & Social Media'
             widget: 'object'
@@ -26,15 +32,19 @@ collections:
               - name: 'email'
                 label: 'Email'
                 widget: 'string'
+                required: false
               - name: 'twitter'
-                label: 'Twitter Username (without @)'
+                label: 'Twitter Username'
                 widget: 'string'
+                required: false
               - name: 'facebook'
                 label: 'Facebook User / Page Name'
                 widget: 'string'
+                required: false
               - name: 'instagram'
                 label: 'Instagram Username'
                 widget: 'string'
+                required: false
       - name: 'authors'
         label: 'Authors'
         file: '_data/authors.yml'
@@ -52,18 +62,23 @@ collections:
               - name: 'email'
                 label: 'Email'
                 widget: 'string'
+                required: false
               - name: 'bio'
                 label: 'Bio'
                 widget: 'string'
+                required: false
               - name: 'avatar'
                 label: 'Avatar'
                 widget: 'image'
+                required: false
               - name: 'cover'
                 label: 'Cover'
                 widget: 'image'
+                required: false
               - name: 'location'
                 label: 'Location'
                 widget: 'string'
+                required: false
               - name: 'social_media'
                 label: 'Social Media'
                 widget: 'object'
@@ -71,18 +86,24 @@ collections:
                   - name: 'website'
                     label: 'Website'
                     widget: 'string'
+                    required: false
                   - name: 'twitter'
-                    label: 'Twitter Username (without @)'
+                    label: 'Twitter Username'
                     widget: 'string'
+                    required: false
+                    comment: Twitter account username
                   - name: 'facebook'
                     label: 'Facebook Username'
                     widget: 'string'
+                    required: false
                   - name: 'instagram'
                     label: 'Instagram Username'
                     widget: 'string'
+                    required: false
                   - name: 'linkedin'
                     label: 'LinkedIn Username'
                     widget: 'string'
+                    required: false
       - name: 'tags'
         label: 'Tags'
         file: '_data/tags.yml'
@@ -97,9 +118,11 @@ collections:
               - name: 'description'
                 label: 'Description'
                 widget: 'string'
+                required: false
               - name: 'cover'
                 label: 'Cover'
                 widget: 'image'
+                required: false
   - name: 'pages'
     label: 'Pages'
     files:
@@ -128,14 +151,17 @@ collections:
       - name: 'tags'
         label: 'Tags'
         widget: 'list'
-        # Uncomment to show tags as a list, by default it is CSV input
-        # field:
-        #   name: 'name'
-        #   label: 'Name'
-        #   widget: 'string'
+        required: false
+        # Below field is used to show tags as a list, by default it is CSV text input
+        summary: '{{fields.name}}'
+        field:
+          name: 'name'
+          label: 'Name'
+          widget: 'string'
       - name: 'cover'
         label: 'Cover Photo'
         widget: 'image'
+        required: false
       - name: 'body'
         label: 'Body'
         widget: 'markdown'

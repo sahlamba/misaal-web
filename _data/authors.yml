@@ -3,8 +3,8 @@ authors:
     display_name: 'Default'
     email: 'default@example.com'
     bio: 'Default user to demo bio'
-    avatar: 'assets/images/ghost.png'
-    cover: 'assets/images/site-cover.jpg'
+    avatar: '/assets/uploads/ghost.png'
+    cover: '/assets/uploads/site-cover.jpg'
     location: 'India'
     social_media:
       website: ''
