@@ -54,7 +54,7 @@
       <a class="subscribe-overlay-close" href="#"></a>
       <div class="subscribe-overlay-content">
         {% if site.logo %}
-          <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.data.settings.title }}" />
+          <img class="subscribe-overlay-logo" src="{{ site.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
         {% endif %}
         <h1 class="subscribe-overlay-title">Subscribe to {{ site.data.settings.title }}</h1>
         <p class="subscribe-overlay-description">

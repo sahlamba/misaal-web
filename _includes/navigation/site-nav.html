@@ -2,11 +2,11 @@
   <div class="site-nav-left">
     {% if page.current != 'home' %}
       {% if site.logo %}
-        <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}">
-          <img src="{{ site.baseurl}}{{ site.logo }}" alt="{{ site.data.settings.title }}" />
+        <a class="site-nav-logo" href="{{ site.baseurl }}">
+          <img src="{{ site.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
         </a>
       {% else %}
-        <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}">
+        <a class="site-nav-logo" href="{{ site.baseurl }}">
           {{ site.data.settings.title }}
         </a>
       {% endif %}
