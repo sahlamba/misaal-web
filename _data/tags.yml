@@ -1,7 +1,7 @@
 tags:
-  - name: 'example'
-    description: 'Example tag to show all data fields available'
-    cover: # Leave blank or set to false
-  - name: 'getting-started'
-    description: 'Testing getting started tag'
-    cover: 'assets/images/site-cover.jpg'
+  - name: example
+    description: Example tag to show all data fields available
+    cover: /assets/uploads/hot-air-balloons.jpg
+  - name: getting-started
+    description: Testing getting started tag
+    cover: /assets/uploads/hot-air-balloons.jpg
