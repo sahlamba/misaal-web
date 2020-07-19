@@ -10,8 +10,8 @@ pagination:
 {% include vars/tag-info.html %}
 <header
   class="site-header outer 
-  {% if cover or site.cover %}
-  " style="background-image: url({% if cover %}{{ cover | relative_url }}{% elsif site.cover %}{{ site.cover | relative_url }}{% endif %})
+  {% if cover or site.data.settings.cover %}
+  " style="background-image: url({% if cover %}{{ cover | relative_url }}{% elsif site.data.settings.cover %}{{ site.data.settings.cover | relative_url }}{% endif %})
   {% else %}no-cover{% endif %}">
   <div class="inner">
     {% include navigation/site-nav.html %}

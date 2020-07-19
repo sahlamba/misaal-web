@@ -128,8 +128,8 @@ layout: default
         {% endfor %}
         {% if related_posts > 1 %}
           <article class="read-next-card"
-            {% if site.cover %}
-              style="background-image: url({{ site.cover | relative_url }})"
+            {% if site.data.settings.cover %}
+              style="background-image: url({{ site.data.settings.cover | relative_url }})"
             {% elsif page.cover %}
               style="background-image: url({{ page.cover | relative_url }})"
             {% endif %}>

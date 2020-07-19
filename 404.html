@@ -24,9 +24,9 @@ permalink: 404.html
       {% else %}no-cover{% endif %}">
       <div class="inner">
         <nav class="site-nav-center">
-          {% if site.logo %}
+          {% if site.data.settings.logo %}
             <a class="site-nav-logo" href="{{ site.baseurl }}">
-              <img src="{{ site.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
+              <img src="{{ site.data.settings.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
             </a>
           {% else %}
             <a class="site-nav-logo" href="{{ site.baseurl }}">

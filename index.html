@@ -10,15 +10,15 @@ pagination:
 
 <header
   class="site-header outer
-    {% if page.cover or site.cover %}
-    " style="background-image: url({% if page.cover %}{{ page.cover | relative_url }}{% elsif site.cover %}{{ site.cover | relative_url }}{% endif %})
+    {% if page.cover or site.data.settings.cover %}
+    " style="background-image: url({% if page.cover %}{{ page.cover | relative_url }}{% elsif site.data.settings.cover %}{{ site.data.settings.cover | relative_url }}{% endif %})
     {% else %}no-cover{% endif %}">
   <div class="inner">
     {% include navigation/site-nav.html %}
     <div class="site-header-content">
       <h1 class="site-title">
-        {% if site.logo %}
-          <img class="site-logo" src="{{ site.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
+        {% if site.data.settings.logo %}
+          <img class="site-logo" src="{{ site.data.settings.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
         {% else %}
           {{ site.data.settings.title }}
         {% endif %}
