@@ -1,6 +1,6 @@
 ---
 title: Welcome to Jekyll!
-date: 2020-07-02 19:16:11 +0530
+date: 2020-07-20T10:48:20.937Z
 tags:
   - getting-started
   - example
