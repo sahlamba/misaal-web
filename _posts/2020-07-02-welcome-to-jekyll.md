@@ -1,9 +1,8 @@
 ---
-title: Welcome to Jekyll!
+title: CA opened up multiple doors of opportunities for me in finance, says
+  Akil, a CA ranker of 2016
 date: 2020-07-20T10:48:20.937Z
-tags:
-  - getting-started
-  - example
+tags: []
 cover: /assets/uploads/whatsapp_image_2020-07-14_at_1-removebg-preview.png
 ---
 
