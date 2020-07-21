@@ -5,27 +5,22 @@ date: 2020-07-20T10:48:20.937Z
 tags: []
 cover: /assets/uploads/whatsapp_image_2020-07-14_at_1-removebg-preview.png
 ---
+<!--StartFragment-->
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Millions of people like to play volleyball. Fewer want to play in high school. Even fewer hope to play in college. Even fewer imagine themselves playing in the Olympics.
 
-Jekyll requires blog post files to be named according to the following format:
+And then there's [Kerri Walsh Jennings](https://twitter.com/kerrileewalsh), who not only dreamed of playing in the Olympics... but who won actually won a bronze medal and three gold medals.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Clearly Kerri thinks big -- which is why it's no surprise that her latest venture is of a similarly grand scale. [p1440](https://www.p1440.com/) ("p" stands for platform, "1440" for the number of minutes in every day) is an [event series and digital community](https://www.p1440.com/faq.php) designed to elevate the sport of beach volleyball and provide inspiration and resources to live life more fully.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Where the events are concerned, think Coachella, Wanderlust, and professional volleyball all rolled into one: Music festival, health and wellness village, yoga and Pilates lessons... the goal for Kerri and her husband Casey is to provide something for everyone -- or at least, as Kerri said when we spoke, "for everyone who wants to live a life of intention."
 
-Jekyll also offers powerful support for code snippets:
+Which, of course, *is* everyone.
 
-{% highlight ruby %}
-def print_hi(name)
-puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+**Clearly you're capable of achieving at an extremely high level, but still: This is a really big venture.**
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+(Laughs.) You're right. It *is* a lot. But what we're doing is needed not just in our sport but in the world at large.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Start with the sport of beach volleyball. Our goal is to give back to a sport that is sick at the top level but healthy everywhere else. The sport is too great for it to stay status quo, so we're thinking big.
+
+<!--EndFragment-->
