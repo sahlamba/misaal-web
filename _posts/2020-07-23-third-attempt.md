@@ -1,6 +1,5 @@
 ---
-title: India’s greatest living hockey player says team has great chance at Asiad
-  & Olympic glory
+title: India’s greatest living hockey player says team has great chance
 date: 2020-07-23T16:48:12.548Z
 cover: /assets/uploads/balbir-singh-696x392.jpg
 ---
