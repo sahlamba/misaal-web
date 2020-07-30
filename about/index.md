@@ -1,7 +1,7 @@
 ---
 layout: page
 current: about
-title: Title
+title: About Us
 ---
 <!--StartFragment-->
 
