@@ -536,7 +536,7 @@ body {
 .inner {
   margin: 0 auto;
   max-width: 1040px;
-  width: 100%
+  width: 100%;
 }
 
 @media (min-width:900px) {
@@ -556,8 +556,8 @@ body {
 
 .site-header {
   position: relative;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  /* padding-top: 12px; */
+  /* padding-bottom: 12px; */
   color: #fff;
   background: #090a0b no-repeat 50%;
   background-size: cover
@@ -644,8 +644,19 @@ body {
   justify-content: space-between;
   -ms-flex-align: start;
   align-items: flex-start;
-  height: 40px;
+  /* height: 40px; */
+  background-color: rgba(9, 10, 11, 0.8);
   font-size: 1.2rem
+}
+
+.site-nav-inner {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 1040px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-nav,
@@ -661,7 +672,7 @@ body {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin-right: 10px;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
   letter-spacing: .4px;
   white-space: nowrap;
   -ms-overflow-scrolling: touch
@@ -710,7 +721,7 @@ body {
 }
 
 .nav li a {
-  padding: 10px 12px;
+  padding: 22px 12px;
   color: #fff;
   opacity: .8
 }
