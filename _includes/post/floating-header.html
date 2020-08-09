@@ -2,7 +2,7 @@
   <div class="floating-header-logo">
     <a href="{{ site.url }}{{ site.baseurl }}">
       {% if site.data.settings.logo_dark %}
-        <img src="{{ site.baseurl }}{{ site.data.settings.logo_dark }}" alt="{{ site.data.settings.title }} icon" />
+        <img src="{{ site.data.settings.logo_dark | relative_url }}" alt="{{ site.data.settings.title }} icon" />
       {% endif %}
       <span>{{ site.data.settings.title }}</span>
     </a>
