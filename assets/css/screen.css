@@ -599,7 +599,7 @@ body {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10vw 4vw;
+  padding: 6vw 4vw 14vw 4vw;
   min-height: 200px;
   max-height: 450px;
   text-align: center
@@ -614,7 +614,7 @@ body {
 }
 
 .site-logo {
-  max-height: 45px
+  max-width: 150px;
 }
 
 .site-description {
@@ -683,7 +683,7 @@ body {
   flex-shrink: 0;
   display: block;
   margin-right: 24px;
-  padding: 11px 0;
+  /* padding: 11px 0; */
   color: #fff;
   font-size: 1.7rem;
   line-height: 1em;
@@ -698,7 +698,7 @@ body {
 .site-nav-logo img {
   display: block;
   width: auto;
-  height: 21px
+  max-height: 65px
 }
 
 .nav {
@@ -736,6 +736,7 @@ body {
 }
 
 .site-nav-right,
+.site-footer-nav,
 .social-links {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -757,9 +758,9 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   color: #fff;
-  opacity: .8
+  opacity: .8;
 }
 
 .social-link:hover {
@@ -767,16 +768,20 @@ body {
 }
 
 .social-link svg {
+  height: 2.4rem;
+  fill: #fff;
+}
+
+.social-link-loc svg {
   height: 1.8rem;
-  fill: #fff
 }
 
 .social-link-fb svg {
-  height: 1.5rem
+  /* height: 1.5rem */
 }
 
 .social-link-wb svg {
-  height: 1.6rem
+  /* height: 1.6rem */
 }
 
 .social-link-wb svg path {
@@ -784,7 +789,7 @@ body {
 }
 
 .social-link-rss svg {
-  height: 1.9rem
+  /* height: 1.9rem */
 }
 
 .subscribe-button {
@@ -825,11 +830,11 @@ body {
 
   .site-nav-left {
     margin-right: 0;
-    padding-left: 4vw
+    padding-left: 4vw;
   }
 
   .site-nav-right {
-    display: none
+    display: none;
   }
 }
 
@@ -1881,7 +1886,7 @@ body {
 
 .floating-header-logo img {
   margin: 0 10px 0 0;
-  max-height: 20px
+  max-height: 65px
 }
 
 .floating-header-divider {
@@ -2362,12 +2367,12 @@ body {
 
 .site-footer-nav {
   display: -ms-flexbox;
-  display: flex
+  display: flex;
 }
 
 .site-footer-nav a {
-  position: relative;
-  margin-left: 20px
+  /* position: relative; */
+  /* margin-left: 20px */
 }
 
 .site-footer-nav a:before {
@@ -2396,5 +2401,3 @@ body {
     margin-left: 0
   }
 }
-
-/*# sourceMappingURL=screen.css.map */

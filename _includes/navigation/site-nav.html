@@ -17,18 +17,7 @@
       {% endif %}
     </div>
     <div class="site-nav-right">
-      <div class="social-links">
-        {% if site.data.settings.contact.facebook %}
-          <a class="social-link social-link-fb" href="https://facebook.com/{{ site.data.settings.contact.facebook }}" target="_blank" rel="noopener">
-            {% include icons/facebook.html %}
-          </a>
-        {% endif %}
-        {% if site.data.settings.contact.twitter %}
-          <a class="social-link social-link-tw" href="https://twitter.com/{{ site.data.settings.contact.twitter }}" target="_blank" rel="noopener">
-            {% include icons/twitter.html %}
-          </a>
-        {% endif %}
-      </div>
+      {% include navigation/social-links.html %}
       {% if site.subscribers %}
         <a class="subscribe-button" href="#subscribe">Subscribe</a>
       {% endif %}

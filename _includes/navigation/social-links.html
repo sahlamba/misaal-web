@@ -1,0 +1,23 @@
+Follow Us&nbsp;&nbsp;&nbsp;
+<div class="social-links">
+  {% if site.data.settings.contact.twitter %}
+    <a class="social-link social-link-tw" href="https://twitter.com/{{ site.data.settings.contact.twitter }}" target="_blank" rel="noopener">
+      {% include icons/twitter.html %}
+    </a>
+  {% endif %}
+  {% if site.data.settings.contact.facebook %}
+    <a class="social-link social-link-fb" href="https://facebook.com/{{ site.data.settings.contact.facebook }}" target="_blank" rel="noopener">
+      {% include icons/facebook.html %}
+    </a>
+  {% endif %}
+  {% if site.data.settings.contact.instagram %}
+    <a class="social-link social-link-ig" href="https://instagram.com/{{ site.data.settings.contact.instagram }}" target="_blank" rel="noopener">
+      {% include icons/instagram.html %}
+    </a>
+  {% endif %}
+  {% if site.data.settings.contact.youtube_channel %}
+    <a class="social-link social-link-yt" href="https://www.youtube.com/c/{{ site.data.settings.contact.youtube_channel }}" target="_blank" rel="noopener">
+      {% include icons/youtube.html %}
+    </a>
+  {% endif %}
+</div>

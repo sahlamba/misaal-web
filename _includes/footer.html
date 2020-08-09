@@ -5,17 +5,7 @@
       &copy; {{ site.time | date: '%Y' }}
     </section>
     <nav class="site-footer-nav">
-      <a href="{{ site.baseurl }}">Latest Stories</a>
-      {% if site.data.settings.contact.facebook %}
-        <a href="https://facebook.com/{{ site.data.settings.contact.facebook }}" target="_blank" rel="noopener">
-          Facebook
-        </a>
-      {% endif %}
-      {% if site.data.settings.contact.twitter %}
-        <a href="https://twitter.com/{{ site.data.settings.contact.twitter }}" target="_blank" rel="noopener">
-          Twitter
-        </a>
-      {% endif %}
+      {% include navigation/social-links.html %}
     </nav>
   </div>
 </footer>

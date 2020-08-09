@@ -9,12 +9,12 @@ pagination:
 
 {% include vars/tag-info.html %}
 <header
-  class="site-header outer 
+  class="site-header 
   {% if cover or site.data.settings.cover %}
   " style="background-image: url({% if cover %}{{ cover | relative_url }}{% elsif site.data.settings.cover %}{{ site.data.settings.cover | relative_url }}{% endif %})
   {% else %}no-cover{% endif %}">
+  {% include navigation/site-nav.html %}
   <div class="inner">
-    {% include navigation/site-nav.html %}
     <div class="site-header-content">
       <h1 class="site-title">#{{ page.autopages.display_name | downcase }}</h1>
       <h2 class="site-description">

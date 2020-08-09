@@ -25,6 +25,9 @@ navigation: true
       {% endif %}
       <div class="author-meta">
         {% if page.location %}
+          <span class="social-link social-link-loc">
+            {% include icons/location.html %}
+          </span>
           <div class="author-location">
             {{ page.location }} <span class="bull">&bull;</span>
           </div>
@@ -45,6 +48,11 @@ navigation: true
             {% include icons/website.html %}
           </a>
         {% endif %}
+        {% if page.email %}
+          <a class="social-link" href="mailto:{{ page.email }}" >
+            {% include icons/mail.html %}
+          </a>
+        {% endif %}
         {% if page.social_media.twitter %}
           <a class="social-link social-link-tw" href="https://twitter.com/{{ page.social_media.twitter }}" target="_blank" rel="noopener">
             {% include icons/twitter.html %}
@@ -55,8 +63,16 @@ navigation: true
             {% include icons/facebook.html %}
           </a>
         {% endif %}
-        <!-- TODO Add email link -->
-        <!-- TODO Extend based on social media fields -->
+        {% if page.social_media.instagram %}
+          <a class="social-link social-link-ig" href="https://instagram.com/{{ page.social_media.instagram }}" target="_blank" rel="noopener">
+            {% include icons/instagram.html %}
+          </a>
+        {% endif %}
+        {% if page.social_media.linkedin %}
+          <a class="social-link social-link-lkdn" href="{{ page.social_media.linkedin }}" target="_blank" rel="noopener">
+            {% include icons/linkedin.html %}
+          </a>
+        {% endif %}
       </div>
     </div>
   </div>
