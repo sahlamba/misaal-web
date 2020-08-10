@@ -169,12 +169,12 @@ collections:
       - name: 'title'
         label: 'Title'
         widget: 'string'
-        pattern: ['.{1,90}', 'Maximum allowed length is 90 characters']
+        pattern: ['^.{1,90}$', 'Maximum allowed length is 90 characters']
       - name: 'description'
         label: 'Description'
         widget: 'string'
         required: false
-        pattern: ['.{0,120}', 'Maximum allowed length is 120 characters']
+        pattern: ['^.{0,120}$', 'Maximum allowed length is 120 characters']
         hint: 'One line description of the story, good for SEO'
       - name: 'date'
         label: 'Date'
