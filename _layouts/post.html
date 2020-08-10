@@ -49,6 +49,15 @@ layout: default
 
       <section class="post-full-content">
         <div class="kg-card-markdown">
+          {% if page.youtube_video_id %}
+            <iframe 
+              width="800"
+              height="450" 
+              src="https://www.youtube.com/embed/{{ page.youtube_video_id }}"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          {% endif %}
           {{ content }}
         </div>
       </section>

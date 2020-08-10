@@ -194,6 +194,11 @@ collections:
         label: 'Cover Photo'
         widget: 'image'
         required: false
+      - name: 'youtube_video_id'
+        label: 'YouTube Video ID'
+        widget: 'string'
+        required: false
+        hint: 'YouTube Video ID is the part after v= (i.e. 365wR-wilqA in https://www.youtube.com/watch?v=365wR-wilqA)'
       - name: 'body'
         label: 'Body'
         widget: 'markdown'
