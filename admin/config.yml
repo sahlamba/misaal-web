@@ -8,7 +8,7 @@ media_folder: 'assets/uploads'
 # Branding
 site_url: https://misaal-web.netlify.app
 display_url: https://misaal-web.netlify.app
-logo_url: https://misaal-web.netlify.app/assets/uploads/ghost.png
+logo_url: https://misaal-web.netlify.app/assets/uploads/logo_horizontal.png
 
 collections:
   - name: 'wesbite'
