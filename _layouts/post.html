@@ -47,17 +47,23 @@ layout: default
         </figure>
       {% endif %}
 
-      <section class="post-full-content">
-        <div class="kg-card-markdown">
-          {% if page.youtube_video_id %}
-            <iframe 
-              width="800"
-              height="450" 
+      
+      {% if page.youtube_video_id %}
+        <section class="post-full-video">
+          <div class="aspect-ratio">
+            <iframe
+              width="560"
+              height="315"
               src="https://www.youtube.com/embed/{{ page.youtube_video_id }}"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen></iframe>
-          {% endif %}
+          </div>
+        </section>
+      {% endif %}
+
+      <section class="post-full-content">
+        <div class="kg-card-markdown">
           {{ content }}
         </div>
       </section>

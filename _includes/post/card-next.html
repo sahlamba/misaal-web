@@ -1,9 +1,9 @@
 {% assign words_per_minute = site.words_per_minute | default: 200 %}
 
-<article class="post-card {{ page.next.class }}{% unless page.next.cover %} no-image{% endunless %}">
+<article class="post-card {{ page.next.class }}{% unless page.next.cover or page.next.youtube_video_id %} no-image{% endunless %}">
   {% if page.next.youtube_video_id %}
     <a class="post-card-image-link" href="{{ page.next.url | remove_first: '/' | relative_url }}">
-      <img class="post-card-image" src="https://i.ytimg.com/vi/{{ page.next.youtube_video_id }}/maxresdefault.jpg" />
+      <div class="post-card-image" style="background-image: url('https://i.ytimg.com/vi/{{ page.next.youtube_video_id }}/maxresdefault.jpg')"></div>
       <div class="post-card-image-overlay">
         <div class="play-button">
           {% include icons/play.html %}
