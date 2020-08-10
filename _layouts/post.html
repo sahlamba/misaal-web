@@ -64,7 +64,7 @@ layout: default
 
       <footer class="post-full-footer">
         {% for author in site.data.authors.authors %}
-          {% if author.username == page.author %}
+          {% if author.username == page.author and author.username != 'default' %}
             <section class="author-card">
               {% if author.avatar %}
                 <img class="author-profile-image" src="{{ author.avatar | relative_url }}" alt="{{ page.author }}" />
@@ -113,6 +113,7 @@ layout: default
 
 <aside class="read-next outer">
   <div class="inner">
+    <h3>Read More on {{ site.data.settings.title }}</h3>
     <div class="read-next-feed">
       {% if page.tags.size > 0 %}
         {% assign primary = page.tags | first %}

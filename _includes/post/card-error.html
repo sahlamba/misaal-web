@@ -45,7 +45,7 @@
         </div>
         <footer class="post-card-meta">
           {% for author in site.data.authors.authors %}
-            {% if author.username == post.author %}
+            {% if author.username == post.author and author.username != 'default' %}
               {% if author.avatar %}
                 <img class="author-profile-image" src="{{ author.avatar | relative_url }}" alt="{{ author.display_name }}" />
               {% endif %}

@@ -1685,11 +1685,15 @@ body {
   max-width: 840px
 }
 
+.read-next {
+  background-color: rgb(239, 240, 244);
+}
+
 .read-next-feed {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -20px;
-  padding: 40px 0 0
+  padding: 20px 0 0
 }
 
 .read-next-card,
