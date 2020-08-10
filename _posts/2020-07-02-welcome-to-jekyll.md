@@ -1,6 +1,7 @@
 ---
 title: CA opened up multiple doors of opportunities for me in finance, says
   Aman, a CA ranker of 2016
+description: This is a test
 date: 2020-07-20T10:48:20.937Z
 tags: [getting-started]
 cover: /assets/uploads/dsc_5716.jpg

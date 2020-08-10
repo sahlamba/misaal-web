@@ -732,7 +732,7 @@ body {
 }
 
 .site-nav-right {
-  height: 40px
+  height: 40px;
 }
 
 .site-nav-right,
@@ -747,7 +747,7 @@ body {
 }
 
 .social-links a:last-of-type {
-  padding-right: 20px
+  /* padding-right: 20px */
 }
 
 .social-link {
@@ -834,7 +834,7 @@ body {
   }
 
   .site-nav-right {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -2023,6 +2023,10 @@ body {
 @media (max-width:900px) {
   .floating-header {
     height: 40px
+  }
+
+  .floating-header-logo img {
+    max-height: 40px;
   }
 
   .floating-header-logo,

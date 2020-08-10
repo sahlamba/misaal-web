@@ -33,10 +33,10 @@
           </a>
         </header>
         <section class="post-card-excerpt">
-          {% if post.excerpt %}
-            <p>{{ post.excerpt | strip_html | truncatewords: 33, "" | append: '...' }}</p>
+          {% if post.description and post.description != '' %}
+            <p>{{ post.description | strip_html | truncate: 120 }}</p>
           {% else %}
-            <p>{{ post.content | strip_html | truncatewords: 33, "" | append: '...'}}</p>
+            <p>{{ post.content | strip_html | truncate: 120 }}</p>
           {% endif %}
         </section>
       </div>

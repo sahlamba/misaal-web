@@ -32,10 +32,10 @@
         </a>
       </header>
       <section class="post-card-excerpt">
-        {% if page.previous.excerpt %}
-          <p>{{ page.previous.excerpt | strip_html | truncatewords: 33, "" | append: '...' }}</p>
+        {% if page.previous.description and page.previous.description != '' %}
+          <p>{{ page.previous.description | strip_html | truncate: 120 }}</p>
         {% else %}
-          <p>{{ page.previous.content | strip_html | truncatewords: 33, "" | append: '...'}}</p>
+          <p>{{ page.previous.content | strip_html | truncate: 120 }}</p>
         {% endif %}
       </section>
     </div>

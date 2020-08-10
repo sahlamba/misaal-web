@@ -9,7 +9,7 @@
   href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}" />
 
 {% if page.content and page.current == 'post' or page.current == 'about' %}
-  {% assign excerpt = page.content | strip_html | truncatewords: 50, "" %}
+  {% assign excerpt = page.content | strip_html | truncate: 120 %}
 {% endif %}
 
 <!-- Title below is coming from _includes/vars/title.html -->

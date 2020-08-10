@@ -45,22 +45,27 @@ collections:
                 label: 'Email'
                 widget: 'string'
                 required: false
+                hint: 'Example: contact@example.com'
               - name: 'twitter'
-                label: 'Twitter Username'
+                label: 'Twitter'
                 widget: 'string'
                 required: false
+                hint: 'Twitter username, example: @mywebsite'
               - name: 'facebook'
-                label: 'Facebook User / Page Name'
+                label: 'Facebook Page'
                 widget: 'string'
                 required: false
+                hint: 'Only enter FB page name, example: MyWebsite'
               - name: 'instagram'
-                label: 'Instagram Username'
+                label: 'Instagram'
                 widget: 'string'
                 required: false
+                hint: 'Instagram username, example: mywebsite'
               - name: 'youtube_channel'
                 label: 'YouTube Channel Name'
                 widget: 'string'
                 required: false
+                hint: 'Only enter YouTube channel name, example: MyWebsite'
       - name: 'authors'
         label: 'Authors'
         file: '_data/authors.yml'
@@ -107,7 +112,6 @@ collections:
                     label: 'Twitter Username'
                     widget: 'string'
                     required: false
-                    comment: Twitter account username
                   - name: 'facebook'
                     label: 'Facebook Username'
                     widget: 'string'
@@ -165,6 +169,13 @@ collections:
       - name: 'title'
         label: 'Title'
         widget: 'string'
+        pattern: ['.{1,90}', 'Maximum allowed length is 90 characters']
+      - name: 'description'
+        label: 'Description'
+        widget: 'string'
+        required: false
+        pattern: ['.{0,120}', 'Maximum allowed length is 120 characters']
+        hint: 'One line description of the story, good for SEO'
       - name: 'date'
         label: 'Date'
         widget: 'datetime'
