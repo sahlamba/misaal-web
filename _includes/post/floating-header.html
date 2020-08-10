@@ -10,16 +10,13 @@
   <span class="floating-header-divider">&mdash;</span>
   <div class="floating-header-title">{{ page.title }}</div>
   <div class="floating-header-share">
-    <div class="floating-header-share-label">Share this {% include icons/point.html %}</div>
-    <!-- TODO Fix production_url -->
+    <div class="floating-header-share-label">Share</div>
     <a class="floating-header-share-tw"
-      href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}"
-      onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+      href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ page.url | absolute_url }}" target="_blank" rel="noopener">
       {% include icons/twitter.html %}
     </a>
     <a class="floating-header-share-fb"
-      href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"
-      onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+      href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener">
       {% include icons/facebook.html %}
     </a>
   </div>

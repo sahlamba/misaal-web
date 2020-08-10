@@ -1911,6 +1911,7 @@ body {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding-left: 2%;
+  padding-right: 10px;
   font-size: 1.3rem;
   line-height: 1
 }
@@ -1930,7 +1931,7 @@ body {
 
 .floating-header-share svg {
   width: auto;
-  height: 16px;
+  height: 24px;
   fill: #fff
 }
 
@@ -1960,8 +1961,8 @@ body {
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   color: #fff;
   line-height: 48px;
   text-align: center;
@@ -1969,11 +1970,11 @@ body {
 }
 
 .floating-header-share-tw {
-  background: #33b1ff
+  /* background: #33b1ff */
 }
 
 .floating-header-share-fb {
-  background: #005e99
+  /* background: #005e99 */
 }
 
 .progress {
@@ -2399,6 +2400,10 @@ body {
   .site-footer-content {
     -ms-flex-direction: column;
     flex-direction: column
+  }
+
+  .footer-content-left {
+    text-align: center;
   }
 
   .site-footer-nav a:first-child {

@@ -1,8 +1,15 @@
 <footer class="site-footer outer">
   <div class="site-footer-content inner">
-    <section class="copyright">
-      <a href="{{ site.url }}{{ site.baseurl }}">{{ site.data.settings.title }}</a>
-      &copy; {{ site.time | date: '%Y' }}
+    <section class="footer-content-left">
+      <section class="copyright">
+        <a href="{{ site.url }}{{ site.baseurl }}">{{ site.data.settings.title }}</a>
+        &copy; {{ site.time | date: '%Y' }}
+      </section>
+      {% if site.data.settings.contact.email %}
+        <p>
+          Email: <a href="mailto:{{ site.data.settings.contact.email }}">{{ site.data.settings.contact.email }}</a>
+        </p>
+      {% endif %}
     </section>
     <nav class="site-footer-nav">
       {% include navigation/social-links.html %}
