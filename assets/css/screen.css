@@ -2455,6 +2455,12 @@ body {
   text-decoration: none
 }
 
+.footer-content-left,
+.footer-content-right {
+  flex: 1 0 0;
+  margin-top: 12px;
+}
+
 .site-footer-nav {
   display: -ms-flexbox;
   display: flex;
@@ -2481,17 +2487,26 @@ body {
   display: none
 }
 
+.footer-content-email {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 @media (max-width:650px) {
   .site-footer-content {
-    -ms-flex-direction: column;
-    flex-direction: column
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .footer-content-left {
     text-align: center;
   }
 
+  .site-footer-nav {
+    justify-content: center;
+  }
+
   .site-footer-nav a:first-child {
-    margin-left: 0
+    margin-left: 0;
   }
 }
