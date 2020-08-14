@@ -10,7 +10,7 @@ favicon: 'assets/uploads/favicon.png'
 
 # Site Configuration
 navigation: true
-subscribers: true
+subscribers: false
 google_analytics: # Google Analytics ID
 disqus: false # Enable Disqus
 disqus_shortname: # Disqus Username
@@ -49,7 +49,7 @@ permalink: '/:title'
 # jekyll-paginate-v2 Configuration
 pagination:
   enabled: true
-  per_page: 5
+  per_page: 8
   permalink: '/page/:num/'
   title: ':title | Page :num'
   limit: 0

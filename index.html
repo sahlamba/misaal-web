@@ -9,12 +9,12 @@ pagination:
 ---
 
 <header
-  class="site-header outer
+  class="site-header
     {% if page.cover or site.data.settings.cover %}
     " style="background-image: url({% if page.cover %}{{ page.cover | relative_url }}{% elsif site.data.settings.cover %}{{ site.data.settings.cover | relative_url }}{% endif %})
     {% else %}no-cover{% endif %}">
+  {% include navigation/site-nav.html %}
   <div class="inner">
-    {% include navigation/site-nav.html %}
     <div class="site-header-content">
       <h1 class="site-title">
         {% if site.data.settings.logo %}

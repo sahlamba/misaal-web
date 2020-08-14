@@ -1,18 +1,28 @@
 ---
 layout: page
 current: about
-title: About
+title: About Us
 ---
+<!--StartFragment-->
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll
-usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+**Vision**
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+An Indian society where everyone has equal opportunities to contribute to the nation's development with their full potential
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+**Mission**
 
-[jekyll-organization]: https://github.com/jekyll
+<!--StartFragment-->
+
+Misaal’s mission is to inspire and support young Muslims to dream, to break through the glass ceiling and build a socially and economically comfortable life. We dream of an ecosystem standing on three pillars:
+
+* Inspiration, through stories of high achieving Indian Muslims
+* Support, through mentorship programs and scholarships
+* Up-Skilling, through workshops
+
+As per the All India Survey on Higher Education 2018-19, Muslims comprise 5.23% of the total number of students enrolled in colleges. This is abysmally low as compared to their 14.2 % share in population (Census 2011). According to the Sachar Committee Report, only 1 out of 25 students in undergraduate courses and 1 in 50 students in postgraduate courses in premier institutes is a Muslim. It is an alarming situation for the community as well as for the nation when a sizable chunk of the young population is not educated.
+
+<!--EndFragment-->
+
+<!--EndFragment-->
+
+<!--EndFragment-->

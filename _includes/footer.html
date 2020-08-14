@@ -1,21 +1,21 @@
 <footer class="site-footer outer">
   <div class="site-footer-content inner">
-    <section class="copyright">
-      <a href="{{ site.url }}{{ site.baseurl }}">{{ site.data.settings.title }}</a>
-      &copy; {{ site.time | date: '%Y' }}
+    <section class="footer-content-left">
+      <nav class="site-footer-nav">
+        {% include navigation/social-links.html %}
+      </nav>
+      {% if site.data.settings.contact.email %}
+        <h4 class="footer-content-email">
+          Email: <a href="mailto:{{ site.data.settings.contact.email }}">{{ site.data.settings.contact.email }}</a>
+        </h4>
+      {% endif %}
+      <section class="copyright">
+        <a href="{{ site.url }}{{ site.baseurl }}">{{ site.data.settings.title }}</a>
+        &copy; {{ site.time | date: '%Y' }}
+      </section>
     </section>
-    <nav class="site-footer-nav">
-      <a href="{{ site.baseurl }}">Latest Stories</a>
-      {% if site.data.settings.contact.facebook %}
-        <a href="https://facebook.com/{{ site.data.settings.contact.facebook }}" target="_blank" rel="noopener">
-          Facebook
-        </a>
-      {% endif %}
-      {% if site.data.settings.contact.twitter %}
-        <a href="https://twitter.com/{{ site.data.settings.contact.twitter }}" target="_blank" rel="noopener">
-          Twitter
-        </a>
-      {% endif %}
-    </nav>
+    <section class="footer-content-right">
+      <!-- Contact/Send message form goes here -->
+    </section>
   </div>
 </footer>

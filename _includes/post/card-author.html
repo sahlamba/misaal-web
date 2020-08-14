@@ -2,8 +2,17 @@
 
 {% assign author_posts = site.posts | where: 'author', page.username %}
 {% for post in author_posts %}
-  <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
-    {% if post.cover %}
+  <article class="post-card {{ page.class }}{% unless post.cover or post.youtube_video_id %} no-image{% endunless %}">
+    {% if post.youtube_video_id %}
+      <a class="post-card-image-link" href="{{ post.url | remove_first: '/' | relative_url }}">
+        <div class="post-card-image" style="background-image: url('https://i.ytimg.com/vi/{{ post.youtube_video_id }}/maxresdefault.jpg')"></div>
+        <div class="post-card-image-overlay">
+          <div class="play-button">
+            {% include icons/play.html %}
+          </div>
+        </div>
+      </a>
+    {% elsif post.cover %}
       <a class="post-card-image-link" href="{{ post.url | remove_first: '/' | relative_url }}">
         <div class="post-card-image" style="background-image: url({{ post.cover | relative_url }})"></div>
       </a>
@@ -34,16 +43,16 @@
           </a>
         </header>
         <section class="post-card-excerpt">
-          {% if post.excerpt %}
-            <p>{{ post.excerpt | strip_html | truncatewords: 33, "" | append: '...' }}</p>
+          {% if post.description and post.description != '' %}
+            <p>{{ post.description | strip_html | truncate: 120 }}</p>
           {% else %}
-            <p>{{ post.content | strip_html | truncatewords: 33, "" | append: '...'}}</p>
+            <p>{{ post.content | strip_html | truncate: 120 }}</p>
           {% endif %}
         </section>
       </div>
       <footer class="post-card-meta">
         {% for author in site.data.authors.authors %}
-          {% if author.username == post.author %}
+          {% if author.username == post.author and author.username != 'default' %}
             {% if author.avatar %}
               <img class="author-profile-image" src="{{ author.avatar | relative_url }}" alt="{{ author.display_name }}" />
             {% endif %}

@@ -2,10 +2,8 @@
 layout: default
 ---
 
-<header class="site-header outer">
-  <div class="inner">
-    {% include navigation/site-nav.html %}
-  </div>
+<header class="site-header">
+  {% include navigation/site-nav.html %}
 </header>
 
 <main id="site-main" class="site-main outer" role="main">
@@ -49,6 +47,21 @@ layout: default
         </figure>
       {% endif %}
 
+      
+      {% if page.youtube_video_id %}
+        <section class="post-full-video">
+          <div class="aspect-ratio">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/{{ page.youtube_video_id }}"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+        </section>
+      {% endif %}
+
       <section class="post-full-content">
         <div class="kg-card-markdown">
           {{ content }}
@@ -66,7 +79,7 @@ layout: default
 
       <footer class="post-full-footer">
         {% for author in site.data.authors.authors %}
-          {% if author.username == page.author %}
+          {% if author.username == page.author and author.username != 'default' %}
             <section class="author-card">
               {% if author.avatar %}
                 <img class="author-profile-image" src="{{ author.avatar | relative_url }}" alt="{{ page.author }}" />
@@ -115,6 +128,7 @@ layout: default
 
 <aside class="read-next outer">
   <div class="inner">
+    <h3>Read More on {{ site.data.settings.title }}</h3>
     <div class="read-next-feed">
       {% if page.tags.size > 0 %}
         {% assign primary = page.tags | first %}

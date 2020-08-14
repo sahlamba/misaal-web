@@ -1,9 +1,9 @@
 authors:
   - username: 'default'
-    display_name: 'Default'
-    email: 'default@example.com'
-    bio: 'Default user to demo bio'
-    avatar: '/assets/uploads/ghost.png'
+    display_name: 'Editor'
+    email: 'editor@misaal.co.in'
+    bio: 'I am the default editor of this website.'
+    avatar: '/assets/uploads/logo_only.png'
     cover: '/assets/uploads/site-cover.jpg'
     location: 'India'
     social_media:
