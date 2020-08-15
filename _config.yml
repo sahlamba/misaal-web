@@ -10,7 +10,7 @@ favicon: 'assets/uploads/favicon.png'
 
 # Site Configuration
 navigation: true
-subscribers: false
+subscriptions: true
 google_analytics: # Google Analytics ID
 disqus: false # Enable Disqus
 disqus_shortname: # Disqus Username
