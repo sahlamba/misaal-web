@@ -651,7 +651,7 @@ body {
 
 .site-nav-inner {
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 24px;
   max-width: 1040px;
   width: 100%;
   display: flex;
@@ -675,7 +675,9 @@ body {
   /* padding-bottom: 80px; */
   letter-spacing: .4px;
   white-space: nowrap;
-  -ms-overflow-scrolling: touch
+  -ms-overflow-scrolling: touch;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .site-nav-logo {
@@ -832,6 +834,14 @@ body {
   .site-nav-left {
     margin-right: 0;
     padding-left: 4vw;
+  }
+
+  .site-nav-logo {
+    margin-right: 12px;
+  }
+
+  .site-nav-logo img {
+    max-height: 40px
   }
 
   /* 
