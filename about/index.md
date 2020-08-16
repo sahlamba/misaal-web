@@ -27,11 +27,11 @@ As per the All India Survey on Higher Education 2018-19, Muslims comprise 5.23% 
 
 **Aman Mansuri** <!--StartFragment-->
 
-An IIT Roorkee and IIM Ahmedabad alum. Consultant
+An IIT Roorkee and IIM Ahmedabad alum. Works in a top tier global consulting firm 
 
 **Shaista Khan** <!--StartFragment-->
 
-A NIFTEM and IIM Ahmedabad alum. Associate at a VC
+A NIFTEM and IIM Ahmedabad alum. Works in a Swiss VC firm 
 
 <!--EndFragment-->
 
