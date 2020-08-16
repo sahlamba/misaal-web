@@ -31,6 +31,10 @@ layout: default
       <section class="post-full-content">
         {{ content }}
       </section>
+
+      {% if page.current == 'about' %}
+        {% include team.html %}
+      {% endif %}
     </article>
   </div>
 </main>

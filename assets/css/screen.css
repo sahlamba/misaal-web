@@ -1602,6 +1602,102 @@ body {
   border: 1px solid #e3ecf3
 }
 
+.team-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 24px 0;
+  padding: 0 100px;
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1.6em;
+}
+
+.team-container strong {
+  color: #090a0b;
+}
+
+.team-container .team-title {
+  width: 100%;
+}
+
+.team-container .team-member-card {
+  max-width: 50%;
+  flex: 1 0 calc(50% - 30px);
+  display: flex;
+  align-items: start;
+  margin: 15px;
+}
+
+.team-member-photo-container .team-member-photo {
+  width: 150px;
+  height: 150px;
+  margin-right: 15px;
+  border: 0;
+  border-radius: 50%;
+  background: #090a0b no-repeat 50%;
+  background-size: auto 150px;
+}
+
+.team-member-photo.default-photo-male {
+  background-image: url('/assets/images/man.png');
+}
+
+.team-member-photo.default-photo-female {
+  background-image: url('/assets/images/woman.png');
+}
+
+.team-member-name {
+  margin: 8px 0;
+}
+
+.team-member-bio {
+  font-size: 1.8rem;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+@media (max-width:1170px) {
+  .team-container {
+    padding: 2vw 7vw;
+  }
+
+  .team-member-photo-container .team-member-photo {
+    width: 120px;
+    height: 120px;
+    background-size: auto 120px;
+  }
+}
+
+@media (max-width:800px) {
+  .team-container {
+    font-size: 1.9rem;
+  }
+
+  .team-member-bio {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:700px) {
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-container .team-member-card {
+    max-width: 100%;
+    flex: 1 0 100%;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width:500px) {
+  .team-container {
+    padding: 0;
+  }
+}
+
 .subscribe-form {
   margin: 1.5em 0;
   padding: 6.5vw 7vw 7vw;
