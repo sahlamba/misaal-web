@@ -1,13 +1,14 @@
 ---
-title: "Hard work and continuous learning is the key to success: Zoya Hashmi,
-  Manager at Amazon "
+title: 'Hard work and continuous learning is the key to success: Zoya Hashmi,
+  Manager at Amazon '
 date: 2020-08-16T09:32:20.054Z
-cover: /assets/uploads/screenshot-10-.png
+cover:
 youtube_video_id: 5Kl1W9MKEGw
 ---
+
 <!--StartFragment-->
 
-Zoya Hashmi is a Risk Manager at Amazon India. Zoya is a strong and independent woman who started supporting her family at the young age of 16. She joined Amazon as a customer service representative while she was still pursuing B.Com at Osmania University, Hyderabad. At Amazon, she rose to the level of Risk Manager with 5 promotions in just 8 years. 
+Zoya Hashmi is a Risk Manager at Amazon India. Zoya is a strong and independent woman who started supporting her family at the young age of 16. She joined Amazon as a customer service representative while she was still pursuing B.Com at Osmania University, Hyderabad. At Amazon, she rose to the level of Risk Manager with 5 promotions in just 8 years.
 
 <!--StartFragment-->
 
