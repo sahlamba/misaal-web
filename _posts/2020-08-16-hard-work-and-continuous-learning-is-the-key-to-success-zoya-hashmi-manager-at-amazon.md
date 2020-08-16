@@ -2,6 +2,7 @@
 title: "Hard work and continuous learning is the key to success: Zoya Hashmi,
   Manager at Amazon "
 date: 2020-08-16T09:32:20.054Z
+cover: /assets/uploads/screenshot-10-.png
 youtube_video_id: 5Kl1W9MKEGw
 ---
 <!--StartFragment-->
