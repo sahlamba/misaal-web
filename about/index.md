@@ -21,6 +21,22 @@ Misaal’s mission is to inspire and support young Muslims to dream, to break th
 
 As per the All India Survey on Higher Education 2018-19, Muslims comprise 5.23% of the total number of students enrolled in colleges. This is abysmally low as compared to their 14.2 % share in population (Census 2011). According to the Sachar Committee Report, only 1 out of 25 students in undergraduate courses and 1 in 50 students in postgraduate courses in premier institutes is a Muslim. It is an alarming situation for the community as well as for the nation when a sizable chunk of the young population is not educated.
 
+**Team**
+
+<!--StartFragment-->
+
+**Aman Mansuri** <!--StartFragment-->
+
+An IIT Roorkee and IIM Ahmedabad alum. Consultant
+
+**Shaista Khan** <!--StartFragment-->
+
+A NIFTEM and IIM Ahmedabad alum. Associate at a VC
+
+<!--EndFragment-->
+
+<!--EndFragment-->
+
 <!--EndFragment-->
 
 <!--EndFragment-->
