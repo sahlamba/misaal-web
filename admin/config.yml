@@ -3,6 +3,8 @@ backend:
   repo: sahlamba/misaal-web
   branch: ghost-theme
 
+publish_mode: editorial_workflow
+
 media_folder: 'assets/uploads'
 
 # Branding
