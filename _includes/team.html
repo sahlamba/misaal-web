@@ -1,0 +1,25 @@
+{% assign member_count = 0 %}
+{% for member in site.data.team.members %}
+  {% assign member_count = member_count | plus: 1 %}
+{% endfor %}
+{% if member_count > 0 %}
+<div class="team-container">
+  <p class="team-title"><strong>Team</strong></p>
+  {% for member in site.data.team.members %}
+  <div class="team-member-card">
+    <div class="team-member-photo-container">
+      <div class="team-member-photo 
+        {% if member.photo %}
+        " style="background-image: url({{ member.photo | relative_url }});"
+        {% else %}
+          default-photo-{{ member.gender }}
+        {% endif %}"></div>
+    </div>
+    <div class="team-member-details">
+      <p class="team-member-name"><strong>{{ member.display_name }}</strong></p>
+      <p class="team-member-bio">{{ member.bio }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

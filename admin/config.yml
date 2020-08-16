@@ -1,14 +1,16 @@
 backend:
   name: github
   repo: sahlamba/misaal-web
-  branch: ghost-theme
+  branch: release
+
+publish_mode: editorial_workflow
 
 media_folder: 'assets/uploads'
 
 # Branding
-site_url: https://misaal-web.netlify.app
-display_url: https://misaal-web.netlify.app
-logo_url: https://misaal-web.netlify.app/assets/uploads/logo_horizontal.png
+site_url: https://misaal.co.in
+display_url: https://misaal.co.in
+logo_url: https://misaal.co.in/assets/images/logo_horizontal.png
 
 collections:
   - name: 'wesbite'
@@ -143,6 +145,32 @@ collections:
                 label: 'Cover'
                 widget: 'image'
                 required: false
+      - name: 'team'
+        label: 'Team'
+        file: '_data/team.yml'
+        fields:
+          - name: 'members'
+            label: 'Members'
+            widget: 'list'
+            fields:
+              - name: 'display_name'
+                label: 'Display Name (Full)'
+                widget: 'string'
+                hint: 'Example: Justin Case'
+              - name: 'gender'
+                label: 'Gender'
+                widget: 'select'
+                options: ['male', 'female']
+              - name: 'bio'
+                label: 'Bio'
+                widget: 'string'
+                pattern:
+                  ['^.{1,120}$', 'Maximum allowed length is 120 characters']
+              - name: 'photo'
+                label: 'Photo'
+                widget: 'image'
+                required: false
+                hint: 'Use a square photo with equal width/height for optimal design'
   - name: 'pages'
     label: 'Pages'
     files:

@@ -22,7 +22,7 @@
 <meta property="og:url"
   content="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}" />
 <meta property="og:image"
-  content="{{ site.url }}{{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% else %}{{ site_cover }}{% endif %}" />
+  content="{% if page.youtube_video_id %}https://i.ytimg.com/vi/{{ page.youtube_video_id }}/maxresdefault.jpg{% elsif page.cover %}{{ page.cover | absolute_url }}{% else %}{{ site_cover | absolute_url }}{% endif %}" />
 <meta property="article:publisher" content="https://www.facebook.com/{{ site_facebook }}" />
 
 {% if excerpt %}
@@ -44,7 +44,7 @@
   content="{% if excerpt %}{{ excerpt }}{% elsif page.description %}{{ page.description }}{% else %}{{ site_description }}{% endif %}" />
 <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}" />
 <meta name="twitter:image"
-  content="{{ site.url }}{{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% else %}{{ site_cover }}{% endif %}" />
+  content="{% if page.youtube_video_id %}https://i.ytimg.com/vi/{{ page.youtube_video_id }}/maxresdefault.jpg{% elsif page.cover %}{{ page.cover | absolute_url }}{% else %}{{ site_cover | absolute_url }}{% endif %}" />
 <meta name="twitter:label1" content="Written by" />
 <meta name="twitter:data1" content="{{ site_title }}" />
 
@@ -76,7 +76,7 @@
     "url": "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}{{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% else %}{{ site_cover }}{% endif %}",
+      "url": "{% if page.youtube_video_id %}https://i.ytimg.com/vi/{{ page.youtube_video_id }}/maxresdefault.jpg{% elsif page.cover %}{{ page.cover | absolute_url }}{% else %}{{ site_cover | absolute_url }}{% endif %}}",
       "width": 2000,
       "height": 666
     },

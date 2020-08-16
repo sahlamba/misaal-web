@@ -5,13 +5,13 @@ words_per_minute: 200
 
 # Site Settings
 baseurl: '/'
-url: 'https://misaal-web.netlify.app'
-favicon: 'assets/uploads/favicon.png'
+url: 'https://misaal.co.in'
+favicon: 'assets/images/favicon.png'
 
 # Site Configuration
 navigation: true
-subscribers: false
-google_analytics: # Google Analytics ID
+subscriptions: true
+google_analytics: UA-175459051-1 # Google Analytics ID
 disqus: false # Enable Disqus
 disqus_shortname: # Disqus Username
 

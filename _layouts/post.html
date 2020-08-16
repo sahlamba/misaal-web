@@ -42,7 +42,7 @@ layout: default
         <h1 class="post-full-title">{{ page.title }}</h1>
       </header>
 
-      {% if page.cover %}
+      {% if page.cover and page.youtube_video_id == nil or page.youtube_video_id == '' %}
         <figure class="post-full-image" style="background-image: url({{ page.cover | relative_url }})">
         </figure>
       {% endif %}
@@ -68,15 +68,22 @@ layout: default
         </div>
       </section>
 
-      <!-- TODO Fix subscriptions -->
-      {% if site.subscribers %}
+      {% if site.subscriptions %}
         <section class="subscribe-form">
           <h3 class="subscribe-form-title">Subscribe to {{ site.data.settings.title }}</h3>
           <p>Get the latest stories delivered right to your inbox!</p>
-          {% include subscribe-form.html placeholder="youremail@example.com" %}
+          {% include subscribe-form.html %}
         </section>
       {% endif %}
 
+      {% assign author_count = 0 %}
+      {% for author in site.data.authors.authors %}
+        {% if author.username == page.author and author.username != 'default' %}
+          {% assign author_count = author_count | plus: 1 %}
+        {% endif%}
+      {% endfor %}
+
+      {% if author_count > 0 %}
       <footer class="post-full-footer">
         {% for author in site.data.authors.authors %}
           {% if author.username == page.author and author.username != 'default' %}
@@ -101,6 +108,7 @@ layout: default
           {% endif %}
         {% endfor %}
       </footer>
+      {% endif %}
 
       <!-- TODO Fix disqus configs at all places -->
       {% if site.disqus or page.disqus %}

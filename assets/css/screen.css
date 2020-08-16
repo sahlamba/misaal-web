@@ -651,7 +651,7 @@ body {
 
 .site-nav-inner {
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 24px;
   max-width: 1040px;
   width: 100%;
   display: flex;
@@ -675,7 +675,9 @@ body {
   /* padding-bottom: 80px; */
   letter-spacing: .4px;
   white-space: nowrap;
-  -ms-overflow-scrolling: touch
+  -ms-overflow-scrolling: touch;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .site-nav-logo {
@@ -794,7 +796,8 @@ body {
 
 .subscribe-button {
   display: block;
-  padding: 4px 10px;
+  margin-left: 5px;
+  padding: 10px;
   border: 1px solid #fff;
   color: #fff;
   font-size: 1.2rem;
@@ -833,8 +836,22 @@ body {
     padding-left: 4vw;
   }
 
+  .site-nav-logo {
+    margin-right: 12px;
+  }
+
+  .site-nav-logo img {
+    max-height: 40px
+  }
+
+  /* 
+   * Instead of below, hide Home link in nav
   .site-nav-right {
-    /* display: none; */
+    display: none;
+  } 
+  */
+  .site-nav-left .nav-home {
+    display: none;
   }
 }
 
@@ -1585,6 +1602,102 @@ body {
   border: 1px solid #e3ecf3
 }
 
+.team-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 24px 0;
+  padding: 0 100px;
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1.6em;
+}
+
+.team-container strong {
+  color: #090a0b;
+}
+
+.team-container .team-title {
+  width: 100%;
+}
+
+.team-container .team-member-card {
+  max-width: 50%;
+  flex: 1 0 calc(50% - 30px);
+  display: flex;
+  align-items: start;
+  margin: 15px;
+}
+
+.team-member-photo-container .team-member-photo {
+  width: 150px;
+  height: 150px;
+  margin-right: 15px;
+  border: 0;
+  border-radius: 50%;
+  background: #090a0b no-repeat 50%;
+  background-size: auto 150px;
+}
+
+.team-member-photo.default-photo-male {
+  background-image: url('/assets/images/man.png');
+}
+
+.team-member-photo.default-photo-female {
+  background-image: url('/assets/images/woman.png');
+}
+
+.team-member-name {
+  margin: 8px 0;
+}
+
+.team-member-bio {
+  font-size: 1.8rem;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+@media (max-width:1170px) {
+  .team-container {
+    padding: 2vw 7vw;
+  }
+
+  .team-member-photo-container .team-member-photo {
+    width: 120px;
+    height: 120px;
+    background-size: auto 120px;
+  }
+}
+
+@media (max-width:800px) {
+  .team-container {
+    font-size: 1.9rem;
+  }
+
+  .team-member-bio {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:700px) {
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-container .team-member-card {
+    max-width: 100%;
+    flex: 1 0 100%;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width:500px) {
+  .team-container {
+    padding: 0;
+  }
+}
+
 .subscribe-form {
   margin: 1.5em 0;
   padding: 6.5vw 7vw 7vw;
@@ -1622,9 +1735,16 @@ body {
   max-width: 420px
 }
 
+.subscribe-form .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
 .subscribe-form .form-group {
   -ms-flex-positive: 1;
-  flex-grow: 1
+  flex-grow: 1;
+  text-align: left;
 }
 
 .subscribe-email {
@@ -1645,7 +1765,7 @@ body {
   -webkit-appearance: none
 }
 
-.subscribe-form button {
+.subscribe-form .submit-button {
   display: inline-block;
   margin: 0 0 0 10px;
   padding: 0 20px;
@@ -1663,8 +1783,8 @@ body {
   -webkit-font-smoothing: subpixel-antialiased
 }
 
-.subscribe-form button:active,
-.subscribe-form button:focus {
+.subscribe-form .submit-button:active,
+.subscribe-form .submit-button:focus {
   background: #209cdf
 }
 
@@ -1684,11 +1804,18 @@ body {
     flex-direction: column
   }
 
+  .subscribe-form .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+
   .subscribe-form .form-group {
     width: 100%
   }
 
-  .subscribe-form button {
+  .subscribe-form .submit-button {
     margin: 10px 0 0;
     width: 100%
   }
@@ -2339,9 +2466,16 @@ body {
   max-width: 500px
 }
 
+.subscribe-overlay .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
 .subscribe-overlay .form-group {
   -ms-flex-positive: 1;
-  flex-grow: 1
+  flex-grow: 1;
+  text-align: left;
 }
 
 .subscribe-overlay .subscribe-email {
@@ -2368,7 +2502,7 @@ body {
   border-color: #becdd5
 }
 
-.subscribe-overlay button {
+.subscribe-overlay .submit-button {
   display: inline-block;
   margin: 0 0 0 15px;
   padding: 0 25px;
@@ -2386,8 +2520,8 @@ body {
   -webkit-font-smoothing: subpixel-antialiased
 }
 
-.subscribe-overlay button:active,
-.subscribe-overlay button:focus {
+.subscribe-overlay .submit-button:active,
+.subscribe-overlay .submit-button:focus {
   background: #209cdf
 }
 
@@ -2423,6 +2557,24 @@ body {
 
 .subscribe-overlay-close:hover {
   cursor: default
+}
+
+@media (max-width:500px) {
+  .subscribe-overlay .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+
+  .subscribe-overlay .form-group {
+    width: 100%;
+  }
+
+  .subscribe-overlay .submit-button {
+    margin: 10px 0 0;
+    width: 100%;
+  }
 }
 
 .site-footer {
