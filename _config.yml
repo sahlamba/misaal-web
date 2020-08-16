@@ -5,7 +5,7 @@ words_per_minute: 200
 
 # Site Settings
 baseurl: '/'
-url: 'https://misaal-web.netlify.app'
+url: 'https://misaal.co.in'
 favicon: 'assets/images/favicon.png'
 
 # Site Configuration

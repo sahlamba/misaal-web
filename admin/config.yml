@@ -1,16 +1,16 @@
 backend:
   name: github
   repo: sahlamba/misaal-web
-  branch: ghost-theme
+  branch: release
 
 publish_mode: editorial_workflow
 
 media_folder: 'assets/uploads'
 
 # Branding
-site_url: https://misaal-web.netlify.app
-display_url: https://misaal-web.netlify.app
-logo_url: https://misaal-web.netlify.app/assets/images/logo_horizontal.png
+site_url: https://misaal.co.in
+display_url: https://misaal.co.in
+logo_url: https://misaal.co.in/assets/images/logo_horizontal.png
 
 collections:
   - name: 'wesbite'
