@@ -7,7 +7,7 @@ title: About Us
 
 **Vision**
 
-India where everyone has equal opportunities to unleash their full potential and contribute to nation’s development.
+India where everyone has equal opportunities to unleash their full potential and contribute to nation’s development
 
 **Mission**
 
