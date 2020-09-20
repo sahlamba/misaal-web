@@ -1,5 +1,5 @@
 ---
-title: Develop a long term vision to get ahead in life says IITian and IIM B
+title: Develop a long term vision to get ahead in life, says IITian and IIM B
   alumni, Osama Ahmad
 date: 2020-09-20T10:43:56.392Z
 cover: /assets/uploads/thumbnail.png
