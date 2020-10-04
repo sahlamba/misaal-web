@@ -1,6 +1,5 @@
 ---
-title: Curiosity is power, Firdaus Haque - IIM A graduate working in e-mobility
-  sector World bank
+title: Curiosity is power, Firdaus Haque - IIM A, Mahindra, IFC - World bank
 date: 2020-10-04T07:01:51.406Z
 youtube_video_id: Br999THadRU
 ---
