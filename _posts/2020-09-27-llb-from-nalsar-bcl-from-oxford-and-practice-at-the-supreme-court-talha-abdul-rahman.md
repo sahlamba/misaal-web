@@ -2,7 +2,7 @@
 title: "LLB from NALSAR, BCL from Oxford and practice at the Supreme Court:
   Talha Abdul Rahman"
 date: 2020-09-27T11:51:02.438Z
-cover: /assets/uploads/thumbnail.png
+cover: /assets/uploads/talha-thumbnail.png
 youtube_video_id: UQRLeFO7dNk
 ---
 <!--StartFragment-->
