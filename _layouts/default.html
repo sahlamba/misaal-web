@@ -36,6 +36,8 @@
     <![endif]-->
 
   {% include head-meta.html %}
+
+  {% include analytics.html %}
 </head>
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
   <div class="site-wrapper">
@@ -69,8 +71,6 @@
   <!-- jQuery + Fitvids, which makes all video embeds responsive -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
-
-  {% include analytics.html %}
 
   {% if page.class == "post-template" %}
     {% include post/scripts.html %}
