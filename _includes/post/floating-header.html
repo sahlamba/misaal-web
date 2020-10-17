@@ -1,10 +1,17 @@
+{% assign lang = site.active_lang %}
+{% assign share_url = '' %}
+{% if lang != site.default_lang %}
+  {% assign share_url = site.url | append: site.baseurl | append: '/' | append: lang | append: page.url %}
+{% else %}
+  {% assign share_url = site.url | append: site.baseurl | append: page.url %}
+{% endif %}
 <div class="floating-header">
   <div class="floating-header-logo">
-    <a href="{{ site.url }}{{ site.baseurl }}">
+    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
       {% if site.data.settings.logo_dark %}
-        <img src="{{ site.data.settings.logo_dark | relative_url }}" alt="{{ site.data.settings.title }} icon" />
+        <img src="{{ site.data.settings.logo_dark | relative_url }}" alt="{{ site.data[lang].settings.title }} icon" />
       {% endif %}
-      <span>{{ site.data.settings.title }}</span>
+      <span>{{ site.data[lang].settings.title }}</span>
     </a>
   </div>
   <span class="floating-header-divider">&mdash;</span>
@@ -16,11 +23,11 @@
       {% include icons/whatsapp.html %}
     </a>
     <a class="floating-header-share-tw"
-      href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ page.url | absolute_url }}" target="_blank" rel="noopener">
+      href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ share_url }}" target="_blank" rel="noopener">
       {% include icons/twitter.html %}
     </a>
     <a class="floating-header-share-fb"
-      href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener">
+      href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener">
       {% include icons/facebook.html %}
     </a>
   </div>

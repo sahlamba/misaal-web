@@ -4,6 +4,8 @@ title: From a village in Jehanabad to studying at IIMA and working at the World
 date: 2020-10-04T07:01:51.406Z
 cover: /assets/uploads/thumbnail.png
 youtube_video_id: Br999THadRU
+permalink: curiosity-is-power-firdaus-haque-iim-a-graduate-working-in-e-mobility-sector-world-bank
+lang: en
 ---
 <!--StartFragment-->
 

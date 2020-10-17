@@ -4,6 +4,7 @@ current: 'error'
 title: '404 - Page Not Found'
 permalink: 404.html
 ---
+{% assign lang = site.active_lang %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,12 +26,12 @@ permalink: 404.html
       <div class="inner">
         <nav class="site-nav-center">
           {% if site.data.settings.logo %}
-            <a class="site-nav-logo" href="{{ site.baseurl }}">
-              <img src="{{ site.data.settings.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
+            <a class="site-nav-logo" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
+              <img src="{{ site.data.settings.logo | relative_url }}" alt="{{ site.data[lang].settings.title }}" />
             </a>
           {% else %}
-            <a class="site-nav-logo" href="{{ site.baseurl }}">
-              {{ site.data.settings.title }}
+            <a class="site-nav-logo" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
+              {{ site.data[lang].settings.title }}
             </a>
           {% endif %}
         </nav>
@@ -42,7 +43,7 @@ permalink: 404.html
         <section class="error-message">
           <h1 class="error-code">404</h1>
           <p class="error-description">Page not found</p>
-          <a class="error-link" href="{{ site.baseurl }}">Go to the front page →</a>
+          <a class="error-link" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">Go to the front page →</a>
         </section>
       </div>
     </main>
