@@ -16,7 +16,7 @@ includes_dir: _includes
 
 # Site Settings
 # baseurl: '/'
-url: 'https://misaal.co.in'
+url: 'https://misaal-web.netlify.app'
 favicon: 'assets/images/favicon.png'
 
 # Site Configuration
@@ -53,6 +53,7 @@ plugins_dir: ['_plugins']
 plugins:
   - jekyll-paginate-v2
   - jekyll-datapage-generator
+  - jekyll-polyglot
 
 # Permalink Defaults
 permalink: '/:title'

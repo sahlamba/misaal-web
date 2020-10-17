@@ -1,15 +1,15 @@
 backend:
   name: github
   repo: sahlamba/misaal-web
-  branch: release
+  branch: polyglot
 
 publish_mode: editorial_workflow
 
 media_folder: 'assets/uploads'
 
 # Branding
-site_url: https://misaal.co.in
-display_url: https://misaal.co.in
+site_url: https://misaal-web.netlify.app
+display_url: https://misaal-web.netlify.app
 logo_url: https://misaal.co.in/assets/images/logo_horizontal.png
 
 collections:
@@ -293,7 +293,7 @@ collections:
       - name: 'body'
         label: 'Body'
         widget: 'markdown'
-- name: 'posts_hi'
+  - name: 'posts_hi'
     label: 'Posts (Hindi)'
     folder: '_posts/hi'
     create: true
