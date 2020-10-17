@@ -4,6 +4,8 @@ title: "LLB from NALSAR, BCL from Oxford and practice at the Supreme Court:
 date: 2020-09-27T11:51:02.438Z
 cover: /assets/uploads/thumbnail.png
 youtube_video_id: UQRLeFO7dNk
+permalink: llb-from-nalsar-bcl-from-oxford-and-practice-at-the-supreme-court-talha-abdul-rahman
+lang: en
 ---
 <!--StartFragment-->
 

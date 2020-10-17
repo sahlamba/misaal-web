@@ -13,12 +13,12 @@ display_url: https://misaal-web.netlify.app
 logo_url: https://misaal-web.netlify.app/assets/images/logo_horizontal.png
 
 collections:
-  - name: 'wesbite'
-    label: 'Website'
+  - name: 'website_en'
+    label: 'Website (English)'
     files:
-      - name: 'settings'
-        label: 'Settings'
-        file: '_data/settings.yml'
+      - name: 'settings_en'
+        label: 'Settings (English)'
+        file: '_data/en/settings.yml'
         fields:
           - name: 'title'
             label: 'Title'
@@ -68,9 +68,9 @@ collections:
                 widget: 'string'
                 required: false
                 hint: 'Only enter YouTube channel name, example: MyWebsite'
-      - name: 'authors'
-        label: 'Authors'
-        file: '_data/authors.yml'
+      - name: 'authors_en'
+        label: 'Authors (English)'
+        file: '_data/en/authors.yml'
         fields:
           - name: 'authors'
             label: 'Authors'
@@ -126,9 +126,9 @@ collections:
                     label: 'LinkedIn Username'
                     widget: 'string'
                     required: false
-      - name: 'tags'
-        label: 'Tags'
-        file: '_data/tags.yml'
+      - name: 'tags_en'
+        label: 'Tags (English)'
+        file: '_data/en/tags.yml'
         fields:
           - name: 'tags'
             label: 'Tags'
@@ -145,9 +145,49 @@ collections:
                 label: 'Cover'
                 widget: 'image'
                 required: false
-      - name: 'team'
-        label: 'Team'
-        file: '_data/team.yml'
+      - name: 'team_en'
+        label: 'Team (English)'
+        file: '_data/en/team.yml'
+        fields:
+          - name: 'members'
+            label: 'Members'
+            widget: 'list'
+            fields:
+              - name: 'display_name'
+                label: 'Display Name (Full)'
+                widget: 'string'
+                hint: 'Example: Justin Case'
+              - name: 'gender'
+                label: 'Gender'
+                widget: 'select'
+                options: ['male', 'female']
+              - name: 'bio'
+                label: 'Bio'
+                widget: 'string'
+                pattern:
+                  ['^.{1,120}$', 'Maximum allowed length is 120 characters']
+              - name: 'photo'
+                label: 'Photo'
+                widget: 'image'
+                required: false
+                hint: 'Use a square photo with equal width/height for optimal design'
+  - name: 'website_hi'
+    label: 'Website (Hindi)'
+    files:
+      - name: 'settings_hi'
+        label: 'Settings (Hindi)'
+        file: '_data/hi/settings.yml'
+        fields:
+          - name: 'title'
+            label: 'Title'
+            widget: 'string'
+          - name: 'description'
+            label: 'Description'
+            widget: 'string'
+            required: false
+      - name: 'team_hi'
+        label: 'Team (Hindi)'
+        file: '_data/hi/team.yml'
         fields:
           - name: 'members'
             label: 'Members'
@@ -174,9 +214,9 @@ collections:
   - name: 'pages'
     label: 'Pages'
     files:
-      - name: 'about'
-        label: 'About Page'
-        file: 'about/index.md'
+      - name: 'about_en'
+        label: 'About Page (English)'
+        file: 'about.en.md'
         fields:
           - name: 'title'
             label: 'Title'
@@ -188,12 +228,86 @@ collections:
           - name: 'body'
             label: 'Body'
             widget: 'markdown'
-  - name: 'posts'
-    label: 'Posts'
-    folder: '_posts'
+      - name: 'about_hi'
+        label: 'About Page (Hindi)'
+        file: 'about.hi.md'
+        fields:
+          - name: 'title'
+            label: 'Title'
+            widget: 'string'
+          - name: 'cover'
+            label: 'Cover'
+            widget: 'image'
+            required: false
+          - name: 'body'
+            label: 'Body'
+            widget: 'markdown'
+  - name: 'posts_en'
+    label: 'Posts (English)'
+    folder: '_posts/en'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
+      - name: 'lang'
+        label: 'Language'
+        widget: 'hidden'
+        default: 'en'
+      - name: 'permalink'
+        label: 'Permalink'
+        widget: 'string'
+        pattern: ['^[a-zA-Z-0-9]+$', 'Use any of the following characters - a to z, A to Z, 0 to 9, - (hyphen as separator)']
+        hint: 'Permalink Rules: Should be same for the same post across all languages (English, Hindi, etc), DO NOT CHANGE once post is published.'
+      - name: 'title'
+        label: 'Title'
+        widget: 'string'
+        pattern: ['^.{1,100}$', 'Maximum allowed length is 100 characters']
+      - name: 'description'
+        label: 'Description'
+        widget: 'string'
+        required: false
+        pattern: ['^.{0,120}$', 'Maximum allowed length is 120 characters']
+        hint: 'One line description of the story, good for SEO'
+      - name: 'date'
+        label: 'Date'
+        widget: 'datetime'
+      - name: 'tags'
+        label: 'Tags'
+        widget: 'list'
+        required: false
+        minimize_collapsed: true
+        # "field" is used to show tags as a list, by default it is CSV text input
+        summary: '{{fields.name}}'
+        field:
+          name: 'name'
+          label: 'Name'
+          widget: 'string'
+      - name: 'cover'
+        label: 'Cover Photo'
+        widget: 'image'
+        required: false
+      - name: 'youtube_video_id'
+        label: 'YouTube Video ID'
+        widget: 'string'
+        required: false
+        hint: 'YouTube Video ID is the part after v= (i.e. 365wR-wilqA in https://www.youtube.com/watch?v=365wR-wilqA)'
+      - name: 'body'
+        label: 'Body'
+        widget: 'markdown'
+- name: 'posts_hi'
+    label: 'Posts (Hindi)'
+    folder: '_posts/hi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - name: 'lang'
+        label: 'Language'
+        widget: 'hidden'
+        default: 'hi'
+      - name: 'permalink'
+        label: 'Permalink'
+        widget: 'string'
+        pattern: ['^[a-zA-Z-0-9]+$', 'Use any of the following characters - a to z, A to Z, 0 to 9, - (hyphen as separator)']
+        hint: 'Permalink Rules: Should be same for the same post across all languages (English, Hindi, etc), DO NOT CHANGE once post is published.'
       - name: 'title'
         label: 'Title'
         widget: 'string'

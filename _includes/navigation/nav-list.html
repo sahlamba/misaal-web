@@ -1,15 +1,15 @@
 <!-- TODO Move navigation data to _data file -->
 <ul class="nav" role="menu">
   <li class="nav-home" role="menuitem">
-    <a href="{{ site.baseurl }}">Home</a>
+    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">Home</a>
   </li>
   <!-- <li class="nav-home" role="menuitem">
-    <a href="{{ site.baseurl }}">Stories</a>
+    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/stories/">Stories</a>
   </li>
   <li class="nav-home" role="menuitem">
-    <a href="{{ site.baseurl }}scholarships/">Scholarships</a>
+    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/scholarships/">Scholarships</a>
   </li> -->
   <li class="nav-about" role="menuitem">
-    <a href="{{ site.baseurl }}about/">About</a>
+    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/about/">About</a>
   </li>
 </ul>

@@ -1,14 +1,15 @@
+{% assign lang = site.active_lang %}
 <nav class="site-nav">
   <div class="site-nav-inner">
     <div class="site-nav-left">
       {% if page.current != 'home' %}
         {% if site.data.settings.logo %}
-          <a class="site-nav-logo" href="{{ site.baseurl }}">
-            <img src="{{ site.data.settings.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
+          <a class="site-nav-logo" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
+            <img src="{{ site.data.settings.logo | relative_url }}" alt="{{ site.data[lang].settings.title }}" />
           </a>
         {% else %}
-          <a class="site-nav-logo" href="{{ site.baseurl }}">
-            {{ site.data.settings.title }}
+          <a class="site-nav-logo" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
+            {{ site.data[lang].settings.title }}
           </a>
         {% endif %}
       {% endif %}

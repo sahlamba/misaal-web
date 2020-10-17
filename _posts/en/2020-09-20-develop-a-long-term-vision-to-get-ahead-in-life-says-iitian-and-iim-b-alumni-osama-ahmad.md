@@ -4,6 +4,8 @@ title: Develop a long term vision to get ahead in life, says IITian and IIM B
 date: 2020-09-20T10:43:56.392Z
 cover: /assets/uploads/thumbnail.png
 youtube_video_id: _j0cGuA9X8U
+permalink: develop-a-long-term-vision-to-get-ahead-in-life-says-iitian-and-iim-b-alumni-osama-ahmad
+lang: en
 ---
 <!--StartFragment-->
 

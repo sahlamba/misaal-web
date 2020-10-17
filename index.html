@@ -7,7 +7,7 @@ navigation: true
 pagination:
   enabled: true
 ---
-
+{% assign lang = site.active_lang %}
 <header
   class="site-header
     {% if page.cover or site.data.settings.cover %}
@@ -18,16 +18,16 @@ pagination:
     <div class="site-header-content">
       <h1 class="site-title">
         {% if site.data.settings.logo %}
-          <img class="site-logo" src="{{ site.data.settings.logo | relative_url }}" alt="{{ site.data.settings.title }}" />
+          <img class="site-logo" src="{{ site.data.settings.logo | relative_url }}" alt="{{ site.data[lang].settings.title }}" />
         {% else %}
-          {{ site.data.settings.title }}
+          {{ site.data[lang].settings.title }}
         {% endif %}
       </h1>
       <h2 class="site-description">
         {% if page.description %}
           {{ page.description }}
         {% else %}
-          {{ site.data.settings.description }}
+          {{ site.data[lang].settings.description }}
         {% endif %}
       </h2>
     </div>

@@ -4,6 +4,8 @@ title: 'Hard work and continuous learning is the key to success: Zoya Hashmi,
 date: 2020-08-16T09:32:20.054Z
 cover:
 youtube_video_id: 5Kl1W9MKEGw
+permalink: hard-work-and-continuous-learning-is-the-key-to-success-zoya-hashmi-manager-at-amazon
+lang: en
 ---
 
 <!--StartFragment-->
