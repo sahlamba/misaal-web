@@ -2,7 +2,7 @@
 
 <article class="post-card {{ page.next.class }}{% unless page.next.cover or page.next.youtube_video_id %} no-image{% endunless %}">
   {% if page.next.youtube_video_id %}
-    <a class="post-card-image-link" href="{{ page.next.url | remove_first: '/' | relative_url }}">
+    <a class="post-card-image-link" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.next.url }}">
       <div class="post-card-image" style="background-image: url('https://i.ytimg.com/vi/{{ page.next.youtube_video_id }}/maxresdefault.jpg')"></div>
       <div class="post-card-image-overlay">
         <div class="play-button">
@@ -11,7 +11,7 @@
       </div>
     </a>
   {% elsif page.next.cover %}
-    <a class="post-card-image-link" href="{{ page.next.url | remove_first: '/' | relative_url }}">
+    <a class="post-card-image-link" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.next.url }}">
       <div class="post-card-image" style="background-image: url({{ page.next.cover | relative_url }})"></div>
     </a>
   {% endif %}
@@ -21,6 +21,7 @@
         <time class="post-card-tags" datetime="{{ page.next.date | date_to_string }}">
           {{ page.next.date | date_to_string }}
         </time>
+        <!-- TODO Multilingual Support for Tag URLs -->
         {% if page.next.tags.size > 0 %}
           <span class="date-divider">/</span>
           {% for tag in page.next.tags %}
@@ -36,7 +37,7 @@
             {% endif %}
           {% endfor %}
         {% endif %}
-        <a href="{{ page.next.url | remove_first: '/' | relative_url }}">
+        <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.next.url }}">
           <h2 class="post-card-title">{{ page.next.title }}</h2>
         </a>
       </header>
@@ -49,6 +50,7 @@
       </section>
     </div>
     <footer class="post-card-meta">
+      <!-- TODO Multilingual Support for Author URLs -->
       {% for author in site.data.authors.authors %}
         {% if author.username == page.next.author and author.username != 'default' %}
           {% if author.avatar %}

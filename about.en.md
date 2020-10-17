@@ -2,16 +2,14 @@
 layout: page
 current: about
 title: About Us
+permalink: about
+lang: en
 ---
-<!--StartFragment-->
-
 **Vision**
 
 India where everyone has equal opportunities to unleash their full potential and contribute to nation’s development.
 
 **Mission**
-
-<!--StartFragment-->
 
 Misaal’s mission is to inspire and support young Muslims to dream, to break through the glass ceiling, and to build a life of socio-economic comfort. 
 
@@ -22,9 +20,3 @@ In order to make a positive difference, we dream of an ecosystem standing on thr
 * Inspiration, through stories of high achieving Indian Muslims
 * Support, through mentorship programs and scholarships
 * Up-Skilling, through workshops
-
-<!--EndFragment-->
-
-<!--EndFragment-->
-
-<!--EndFragment-->

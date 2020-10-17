@@ -10,7 +10,7 @@
         </h4>
       {% endif %}
       <section class="copyright">
-        <a href="{{ site.url }}{{ site.baseurl }}">{{ site.data.settings.title }}</a>
+        <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">{{ site.data[site.active_lang].settings.title }}</a>
         &copy; {{ site.time | date: '%Y' }}
       </section>
     </section>

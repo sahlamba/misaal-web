@@ -3,8 +3,19 @@ markdown: 'kramdown'
 highlighter: 'rouge'
 words_per_minute: 200
 
+# Polyglot Configuration
+languages: ["en", "hi"]
+default_lang: "en"
+exclude_from_localization: ["admin", "assets", "README.md"]
+parallel_localization: true
+lang_from_path: true
+plugins_dir: _plugins
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
+
 # Site Settings
-baseurl: '/'
+# baseurl: '/'
 url: 'https://misaal.co.in'
 favicon: 'assets/images/favicon.png'
 
@@ -43,7 +54,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-datapage-generator
 
-# Permalinks
+# Permalink Defaults
 permalink: '/:title'
 
 # jekyll-paginate-v2 Configuration

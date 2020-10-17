@@ -6,7 +6,7 @@
 
 <link rel="shortcut icon" href="{{ site_favicon | absolute_url }}" type="image/png" />
 <link rel="canonical" 
-  href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}" />
+  href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" />
 
 {% if page.content and page.current == 'post' or page.current == 'about' %}
   {% assign excerpt = page.content | strip_html | truncate: 120 %}
@@ -20,7 +20,7 @@
 <meta property="og:description"
   content="{% if excerpt %}{{ excerpt }}{% elsif page.description %}{{ page.description }}{% else %}{{ site_description }}{% endif %}" />
 <meta property="og:url"
-  content="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}" />
+  content="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}" />
 <meta property="og:image"
   content="{% if page.youtube_video_id %}https://i.ytimg.com/vi/{{ page.youtube_video_id }}/maxresdefault.jpg{% elsif page.cover %}{{ page.cover | absolute_url }}{% else %}{{ site_cover | absolute_url }}{% endif %}" />
 <meta property="article:publisher" content="https://www.facebook.com/{{ site_facebook }}" />
@@ -73,7 +73,7 @@
       "name": "{{ site_title }}",
       "logo": "{{ site.url }}{{ site.baseurl }}{{ site_logo }}"
     },
-    "url": "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}",
+    "url": "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}",
     "image": {
       "@type": "ImageObject",
       "url": "{% if page.youtube_video_id %}https://i.ytimg.com/vi/{{ page.youtube_video_id }}/maxresdefault.jpg{% elsif page.cover %}{{ page.cover | absolute_url }}{% else %}{{ site_cover | absolute_url }}{% endif %}}",
@@ -82,7 +82,7 @@
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}"
+      "@id": "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url }}"
     },
     "description": "{% if excerpt %}{{ excerpt }}{% elsif page.description %}{{ page.description }}{% else %}{{ site_description }}{% endif %}"
   }

@@ -4,6 +4,8 @@ title: "Abrar Ali Saiyed: IIMA graduate, Professor and founder-Association of
 date: 2020-08-23T11:54:17.484Z
 cover: /assets/uploads/abrar-ali-saiyed.png
 youtube_video_id: 7rYxMt1kQ68
+permalink: abrar-ali-saiyed-iima-graduate-professor-and-founder-association-of-muslim-entrepreneurs
+lang: en
 ---
 <!--StartFragment-->
 

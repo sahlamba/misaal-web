@@ -1,3 +1,4 @@
+<!-- TODO Multilingual Support for Tag & Author URLs -->
 {% if page.url %}
   {% if page.url contains "tag/" %}
       {% assign title = page.title %}
@@ -11,5 +12,5 @@
   {% endif %}
 {% endif %}
 {% if title %}
-  {% assign title = title | append: ' | ' | append: site.data.settings.title  %}
+  {% assign title = title | append: ' | ' | append: site.data[site.active_lang].settings.title %}
 {% endif %}
