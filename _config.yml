@@ -15,13 +15,8 @@ data_dir: _data
 includes_dir: _includes
 
 # Site Settings
-<<<<<<< HEAD
-baseurl: '/'
-url: 'https://misaal-web.netlify.app'
-=======
 # baseurl: '/'
-url: 'https://misaal.co.in'
->>>>>>> Add support for Hindi
+url: 'https://misaal-web.netlify.app'
 favicon: 'assets/images/favicon.png'
 
 # Site Configuration
@@ -58,6 +53,7 @@ plugins_dir: ['_plugins']
 plugins:
   - jekyll-paginate-v2
   - jekyll-datapage-generator
+  - jekyll-polyglot
 
 # Permalink Defaults
 permalink: '/:title'
