@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  {% include analytics.html %}
+  {% include google-site-verification.html %}
+  
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
@@ -69,8 +72,6 @@
   <!-- jQuery + Fitvids, which makes all video embeds responsive -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
-
-  {% include analytics.html %}
 
   {% if page.class == "post-template" %}
     {% include post/scripts.html %}

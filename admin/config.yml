@@ -197,7 +197,7 @@ collections:
       - name: 'title'
         label: 'Title'
         widget: 'string'
-        pattern: ['^.{1,90}$', 'Maximum allowed length is 90 characters']
+        pattern: ['^.{1,100}$', 'Maximum allowed length is 100 characters']
       - name: 'description'
         label: 'Description'
         widget: 'string'
