@@ -11,9 +11,13 @@
   <div class="floating-header-title">{{ page.title }}</div>
   <div class="floating-header-share">
     <div class="floating-header-share-label">Share</div>
-    <a class="floating-header-share-tw"
+    <!-- <a class="floating-header-share-tw"
       href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ page.url | absolute_url }}" target="_blank" rel="noopener">
       {% include icons/twitter.html %}
+    </a> -->
+    <a class="floating-header-share-wa"
+      href="https://api.whatsapp.com/send?text={{ page.title | url_encode }} {{ page.url | absolute_url }}" target="_blank" rel="noopener">
+      {% include icons/whatsapp.html %}
     </a>
     <a class="floating-header-share-fb"
       href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener">

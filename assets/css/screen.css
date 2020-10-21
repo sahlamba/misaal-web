@@ -2143,7 +2143,7 @@ body {
 
 .floating-header-share svg {
   width: auto;
-  height: 24px;
+  height: 32px;
   fill: #fff
 }
 
@@ -2168,17 +2168,22 @@ body {
 }
 
 .floating-header-share-fb,
-.floating-header-share-tw {
+.floating-header-share-tw,
+.floating-header-share-wa {
   display: block;
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   color: #fff;
   line-height: 48px;
   text-align: center;
   transition: all .5s cubic-bezier(.19, 1, .22, 1)
+}
+
+.floating-header-share-wa {
+  /* background: #128C7E; */
 }
 
 .floating-header-share-tw {
@@ -2248,7 +2253,8 @@ body {
   }
 
   .floating-header-share-fb,
-  .floating-header-share-tw {
+  .floating-header-share-tw,
+  .floating-header-share-wa {
     width: 40px;
     height: 40px;
     line-height: 38px
