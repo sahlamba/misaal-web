@@ -3,7 +3,7 @@ title: How did BMDA save 3200+ lives in Covid19 in Gujarat? shares Dr. Mohammad
   Hussain | MBBS, MD Medicine
 date: 2020-10-22T13:26:20.310Z
 cover: /assets/uploads/dr.-mohammad-hussain-thumbnail.png
-youtube_video_id: 28NtXisMkDw&t=281s
+youtube_video_id: 28NtXisMkDw
 ---
 <!--StartFragment-->
 
