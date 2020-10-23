@@ -748,6 +748,20 @@ body {
   align-items: center
 }
 
+.language-switch {
+  color: #fbb95b;
+  cursor: pointer;
+}
+
+.language-switch h2 {
+  font-size: 18px;
+  height: 40px;
+  margin: 0 10px;
+  padding: 10px 15px;
+  background: #fbb95b;
+  color: #333;
+}
+
 .social-links a:last-of-type {
   /* padding-right: 20px */
 }
@@ -809,6 +823,12 @@ body {
 .subscribe-button:hover {
   text-decoration: none;
   opacity: 1
+}
+
+@media (max-width:480px) {
+  .subscribe-button {
+    display: none;
+  }
 }
 
 .rss-button {
