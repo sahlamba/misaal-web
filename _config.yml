@@ -16,7 +16,7 @@ includes_dir: _includes
 
 # Site Settings
 # baseurl: '/'
-url: 'https://misaal-web.netlify.app'
+url: 'https://misaal-test.netlify.app'
 favicon: 'assets/images/favicon.png'
 
 # Site Configuration
