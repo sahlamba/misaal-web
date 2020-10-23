@@ -8,9 +8,9 @@ publish_mode: editorial_workflow
 media_folder: 'assets/uploads'
 
 # Branding
-site_url: https://misaal-web.netlify.app
-display_url: https://misaal-web.netlify.app
-logo_url: https://misaal-web.netlify.app/assets/images/logo_horizontal.png
+site_url: https://misaal-test.netlify.app
+display_url: https://misaal-test.netlify.app
+logo_url: https://misaal-test.netlify.app/assets/images/logo_horizontal.png
 
 collections:
   - name: 'website_en'
@@ -225,6 +225,11 @@ collections:
             label: 'Cover'
             widget: 'image'
             required: false
+          - name: 'youtube_video_id'
+            label: 'YouTube Video ID'
+            widget: 'string'
+            required: false
+            hint: 'YouTube Video ID is the part after v= (i.e. 365wR-wilqA in https://www.youtube.com/watch?v=365wR-wilqA)'
           - name: 'body'
             label: 'Body'
             widget: 'markdown'
@@ -239,6 +244,11 @@ collections:
             label: 'Cover'
             widget: 'image'
             required: false
+          - name: 'youtube_video_id'
+            label: 'YouTube Video ID'
+            widget: 'string'
+            required: false
+            hint: 'YouTube Video ID is the part after v= (i.e. 365wR-wilqA in https://www.youtube.com/watch?v=365wR-wilqA)'
           - name: 'body'
             label: 'Body'
             widget: 'markdown'
@@ -255,7 +265,7 @@ collections:
       - name: 'permalink'
         label: 'Permalink'
         widget: 'string'
-        pattern: ['^[a-zA-Z-0-9]+$', 'Use any of the following characters - a to z, A to Z, 0 to 9, - (hyphen as separator)']
+        pattern: ['^[a-z0-9-]+$', 'Use any of the following characters - a to z (lowercase), 0 to 9, - (hyphen as separator)']
         hint: 'Permalink Rules: Should be same for the same post across all languages (English, Hindi, etc), DO NOT CHANGE once post is published.'
       - name: 'title'
         label: 'Title'
@@ -306,7 +316,7 @@ collections:
       - name: 'permalink'
         label: 'Permalink'
         widget: 'string'
-        pattern: ['^[a-zA-Z-0-9]+$', 'Use any of the following characters - a to z, A to Z, 0 to 9, - (hyphen as separator)']
+        pattern: ['^[a-z0-9-]+$', 'Use any of the following characters - a to z (lowercase), 0 to 9, - (hyphen as separator)']
         hint: 'Permalink Rules: Should be same for the same post across all languages (English, Hindi, etc), DO NOT CHANGE once post is published.'
       - name: 'title'
         label: 'Title'

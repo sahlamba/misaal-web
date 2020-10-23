@@ -23,9 +23,24 @@ layout: default
         <h1 class="post-full-title">{{ page.title }}</h1>
       </header>
 
-      {% if page.cover %}
+      {% if page.cover and page.youtube_video_id == nil or page.youtube_video_id == '' %}
         <figure class="post-full-image" style="background-image: url({{ page.cover | relative_url }})">
         </figure>
+      {% endif %}
+
+      
+      {% if page.youtube_video_id %}
+        <section class="post-full-video">
+          <div class="aspect-ratio">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/{{ page.youtube_video_id }}"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+        </section>
       {% endif %}
 
       <section class="post-full-content">
