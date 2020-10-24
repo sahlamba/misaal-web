@@ -1,15 +1,8 @@
-<!-- TODO Move navigation data to _data file -->
+{% assign lang = site.active_lang %}
 <ul class="nav" role="menu">
-  <li class="nav-home" role="menuitem">
-    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">Home</a>
-  </li>
-  <!-- <li class="nav-home" role="menuitem">
-    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/stories/">Stories</a>
-  </li>
-  <li class="nav-home" role="menuitem">
-    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/scholarships/">Scholarships</a>
-  </li> -->
-  <li class="nav-about" role="menuitem">
-    <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/about/">About</a>
-  </li>
+  {% for link in site.data[lang].navigation %}
+    <li class="{{ link.class }}" role="menuitem">
+      <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/{{ link.href }}">{{ link.title }}</a>
+    </li>
+  {% endfor %}
 </ul>

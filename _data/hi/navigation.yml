@@ -1,0 +1,6 @@
+- title: 'घर'
+  href: ''
+  class: 'nav-home'
+- title: 'हमारे बारे में'
+  href: 'about/'
+  class: 'nav-about'

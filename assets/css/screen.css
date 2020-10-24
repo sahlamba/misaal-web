@@ -762,6 +762,23 @@ body {
   color: #333;
 }
 
+.language-switch h2.hindi {
+  font-size: 20px;
+}
+
+@media (max-width:480px) {
+  .language-switch h2 {
+    font-size: 15px;
+    height: auto;
+    margin: 5px;
+    padding: 5px 8px;
+  }
+
+  .language-switch h2.hindi {
+    font-size: 20px;
+  }
+}
+
 .social-links a:last-of-type {
   /* padding-right: 20px */
 }
