@@ -2296,12 +2296,6 @@ body {
   }
 }
 
-@media (max-width:450px) {
-  .floating-header-share-label {
-    display: none
-  }
-}
-
 .site-header-content .author-profile-image {
   z-index: 10;
   -ms-flex-negative: 0;
