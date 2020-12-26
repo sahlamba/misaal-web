@@ -7,3 +7,7 @@ members:
     gender: female
     bio: A NIFTEM and IIM Ahmedabad alum. Associate at a VC.
     photo: /assets/uploads/shai.jpg
+  - display_name: Amim Fatmi
+    gender: male
+    photo: /assets/uploads/li-profile-pic.png
+    bio: A NIFT, Delhi and XLRI Jamshedpur Alum. Assistant Manager at TCS
