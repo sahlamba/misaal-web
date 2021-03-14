@@ -3,7 +3,7 @@ title: Women's Day Special | Rana Safvi - A bestselling historian who started
   her writing career at 58
 date: 2021-03-14T12:54:48.755Z
 cover: /assets/uploads/copy-of-red-orange-and-white-bordered-food-collection-youtube-thumbnail-.png
-youtube_video_id: zc_VABPIM-g&t
+youtube_video_id: zc_VABPIM-g
 ---
 <!--StartFragment-->
 
